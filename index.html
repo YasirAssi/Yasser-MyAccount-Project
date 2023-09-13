@@ -15,7 +15,7 @@
 
 <body>
     <header>
-        <nav>
+        <nav class="navHeader">
             <ul>
                 <li><a href="#">Main</a></li>
                 <li><a href="#">About Me</a></li>
@@ -63,78 +63,62 @@
             Coffe card </p>
         <div class="container">
             <div class="row">
-                <div class="col-sm-2 col-md-3 col-lg-3 col-xl-3">
+                <div class="col-sm-12 col-md-2 col-lg-4 col-xl-4">
                     <div class="card" style="width: 18rem;">
                         <img src="./tigerImages/hereAndNow.jpg" class="card-img-top" alt="hereAndNow">
                         <div class="card-body">
                             <h5 class="card-title  text-center">Here And Now</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of
-                                the
-                                card's
-                                content.</p>
-                            <a href="#" class="d-grid btn">Go To Project</a>
-                        </div>
-                    </div>
-                    <div class="card" style="width: 18rem;">
-                        <img src="./tigerImages/lead.jpg" class="card-img-top" alt="lead">
-                        <div class="card-body">
-                            <h5 class="card-title  text-center">Learn to Lead</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of
-                                the
-                                card's
-                                content.</p>
-                            <a href="#" class="d-grid btn">Go To Project</a>
-                        </div>
-                    </div>
-                    <div class="card" style="width: 18rem;">
-                        <img src="./tigerImages/discover.png" class="card-img-top" alt="discover">
-                        <div class="card-body">
-                            <h5 class="card-title text-center">Discover The World</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of
-                                the
-                                card's
-                                content.</p>
+                            <p class="card-text">This Is Project 1.</p>
                             <a href="#" class="d-grid btn">Go To Project</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-2 col-md-3 col-lg-3 col-xl-3">
+                <div class="col-sm-1 col-md-2 col-lg-4 col-xl-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./tigerImages/lead.jpg" class="card-img-top" alt="lead">
+                        <div class="card-body">
+                            <h5 class="card-title  text-center">Learn to Lead</h5>
+                            <p class="card-text">This Is Project 2</p>
+                            <a href="#" class="d-grid btn">Go To Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-1 col-md-2 col-lg-4 col-xl-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./tigerImages/discover.png" class="card-img-top" alt="discover">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Discover The World</h5>
+                            <p class="card-text">This Is Project 3</p>
+                            <a href="#" class="d-grid btn">Go To Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-1 col-md-2 col-lg-4 col-xl-4">
                     <div class="card" style="width: 18rem;">
                         <img src="./tigerImages/consulta.png" class="card-img-top" alt="consulta">
                         <div class="card-body">
                             <h5 class="card-title text-center">Counsaltan Card</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of
-                                the
-                                card's
-                                content.</p>
+                            <p class="card-text">This Is Project 4</p>
                             <a href="#" class="d-grid btn">Go To Project</a>
                         </div>
                     </div>
+                </div>
+                <div class="col-sm-1 col-md-2 col-lg-4 col-xl-4">
                     <div class="card" style="width: 18rem;">
                         <img src="./tigerImages/maps.png" class="card-img-top" alt="maps">
                         <div class="card-body">
                             <h5 class="card-title text-center">Maps</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of
-                                the
-                                card's
-                                content.</p>
+                            <p class="card-text">This Is Project 5</p>
                             <a href="#" class="d-grid btn">Go To Project</a>
                         </div>
                     </div>
+                </div>
+                <div class="col-sm-1 col-md-2 col-lg-4 col-xl-4">
                     <div class="card" style="width: 18rem;">
                         <img src="./tigerImages/coffe.jpg" class="card-img-top" alt="coffe">
                         <div class="card-body">
                             <h5 class="card-title text-center">Let's Drink Coffe</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of
-                                the
-                                card's
-                                content.</p>
+                            <p class="card-text">This Is Project 6</p>
                             <a href="#" class="d-grid btn">Go To Project</a>
                         </div>
                     </div>
@@ -145,13 +129,45 @@
 
     <footer>
         <form action="">
-            <lable for="first_name">name:</lable>
-            <input type="text" id="first_name" required><br>
-            <lable for="last_name">last name:</lable>
-            <input type="text" id="last_name" required><br>
+            <h3>Contact Us</h3>
+            <lable for="Full_Name"> Full Name</lable>
+            <input type="text" id="Full Name" required><br>
+            <lable for="E-mail">E-mail</lable>
+            <input type="text" id="E-mail" required><br>
+            <lable for="Phone_Number">Phone Number</lable>
+            <input type="text" id="Phone_Number" required><br>
+            <lable for="Message">Message</lable>
+            <input type="text" id="Message" required><br>
             <input type="submit" value="send">
         </form>
     </footer>
+    <nav class="contactMethods">
+
+
+        <figure><img src="./tigerImages/EmailIcon.png" alt="@">
+            <figcaption>abcde@gmail.com</figcaption>
+        </figure>
+        <figure><img src="./tigerImages/Icon awesome-facebook-f.png" alt="facebook">
+            <figcaption>YYYY AAAA</figcaption>
+        </figure>
+        <figure><img src="./tigerImages/locationIcon.png" alt="LOCATION">
+            <figcaption>YYYY 11, KKKK</figcaption>
+        </figure>
+
+        <figure><img src=".//tigerImages/whatsappicon.png" alt="WHATSAPP">
+            <figcaption>+000 00000000</figcaption>
+        </figure>
+        <figure><img src="./tigerImages/linkdINicon.png" alt="linkdINicon">
+            <figcaption>YYYY AAAA</figcaption>
+        </figure>
+        <figure><img src="./tigerImages/phone.png" alt="PHONE">
+            <figcaption>00-0000000</figcaption>
+        </figure>
+        <div class="copyrights">&copy; copyrights
+            <img src="./tigerImages/yasirAsi.png" alt="yasirAsi">
+        </div>
+    </nav>
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.
         min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
