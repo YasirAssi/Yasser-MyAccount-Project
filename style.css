@@ -19,10 +19,46 @@
     z-index: 999;
 }
 
+.unicode {
+    font-size: 2rem;
+    color: #000;
+    display: none;
+    margin: 0;
+}
+
+@media (max-width:550px) {
+
+    .navHeader {
+
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .unicode {
+        display: block;
+        position: fixed;
+        z-index: 999;
+    }
+
+    .navHeader {
+        display: none;
+    }
+
+    .unicode:hover~.navHeader {
+        display: block;
+
+    }
+}
+
 ul {
     list-style-type: none;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-start;
+}
+
+a:last-child {
+    justify-content: flex-end;
 }
 
 .header-container>h1 {
@@ -45,6 +81,7 @@ ul {
     align-items: center;
     width: 1920px;
 }
+
 
 .text-container {
     display: flex;
