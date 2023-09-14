@@ -2,15 +2,15 @@ footer {
     display: flex;
     flex-direction: flex-end;
     width: $width;
-    height: 958px;
+    height: 88.7%;
     background-color: var(--colo);
     background-repeat: no-repeat;
     background-position: top right;
     margin: 0 0;
 
     h3 {
-        width: 200px;
-        height: 53px;
+        width: 10.42%;
+        height: 5%;
         text-align: left;
         font: normal normal 900 36px/53px Heebo;
         color: #fff;
@@ -18,8 +18,8 @@ footer {
     }
 
     img {
-        width: 21vw;
-        height: 31.3vh;
+        width: 40%;
+        height: 62%;
     }
 }
 
@@ -30,8 +30,8 @@ form {
     justify-content: left;
     padding: 20px;
     margin: 40px;
-    height: 399px;
-    width: 548px;
+    height: 37%;
+    width: 28.5%;
 
     input[type="text"] {
         padding: 10px;
