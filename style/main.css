@@ -179,7 +179,7 @@ nav ul li a:hover {
 
 #project {
   width: 100vw;
-  height: 2000px;
+  height: 1850px;
   background: #F6F6F6 0% 0% no-repeat padding-box;
 }
 #project p {
@@ -217,8 +217,8 @@ footer h3 {
   font-size: 2.25em;
 }
 footer img {
-  width: 400px;
-  height: 300px;
+  width: 21vw;
+  height: 31.3vh;
 }
 
 form {
@@ -236,8 +236,8 @@ form input[type=text] {
   margin: 5px 0;
   font-size: 1em;
   color: var(--colo);
-  height: 50px;
-  width: 548px;
+  height: 6vh;
+  width: 28.5vw;
 }
 form input[id=message] {
   height: 100px;
