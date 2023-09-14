@@ -18,3 +18,15 @@ h2 {
     align-items: center;
     color: var(--colo);
 }
+
+// @mixin btn($btnWidth, $btnHeight, $btnColor, $btnfont, $textColor) {
+//     display: block;
+//     width: $btnWidth;
+//     height: $btnHeight;
+//     background: $btnColor 0% 0% no-repeat padding-box;
+//     border-radius: 25px;
+//     letter-spacing: 0.3px;
+//     text-decoration: none;
+//     line-height: 2.5;
+//     opacity: 1;
+// }

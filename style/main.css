@@ -17,7 +17,8 @@ h2 {
   color: var(--colo);
 }
 
-.navHeader {
+.navHeader,
+.unicode {
   width: 100vw;
   height: 80px;
   position: fixed;
@@ -25,19 +26,6 @@ h2 {
   border: 1px solid #000;
   background-color: #fff;
   z-index: 999;
-}
-
-ul {
-  list-style-type: none;
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.unicode {
-  font-size: 2rem;
-  color: #000;
-  display: none;
-  margin: 0;
 }
 
 @media (max-width: 550px) {
@@ -58,6 +46,34 @@ ul {
     display: block;
   }
 }
+.unicode {
+  font-size: 1.2em;
+  color: black;
+  font-weight: bold;
+  padding: 5px;
+  display: none;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+}
+
+nav ul li a {
+  margin-top: 23px;
+  text-decoration: none;
+  width: 100px;
+  height: 70px;
+  color: #000;
+  display: block;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+nav ul li a:hover {
+  font-weight: bolder;
+}
+
 .header-container {
   background-image: linear-gradient(to bottom, rgba(101, 163, 235, 0.5), rgba(255, 255, 255, 0.5)), url(../tigerImages/colorSpectrum.jpg);
   height: 28.8125em;
@@ -92,7 +108,6 @@ ul {
   align-items: center;
   flex-wrap: wrap;
 }
-
 .techUsed img {
   height: 100px;
   width: 100px;
@@ -105,17 +120,14 @@ ul {
   width: 100vw;
   height: 715px;
 }
-
 .aboutMe figcaption {
   font: normal normal normal 20px/29px Heebo;
 }
-
 .aboutMe img {
   width: 141px;
   height: 139px;
   border-radius: 50%;
 }
-
 .aboutMe figure {
   width: 55%;
   text-align: center;
@@ -136,14 +148,6 @@ ul {
   width: 100vw;
   height: 1558px;
 }
-
-.btn {
-  width: 200px;
-  height: 30px;
-  border-radius: 25px;
-  background-color: var(--bgc);
-}
-
 .project p {
   display: flex;
   justify-content: center;
@@ -151,6 +155,13 @@ ul {
   text-align: center;
   font: normal normal normal 20px/29px Heebo;
   color: var(--colo);
+}
+
+.btn {
+  width: 200px;
+  height: 30px;
+  border-radius: 25px;
+  background-color: var(--bgc);
 }
 
 footer {
@@ -163,8 +174,7 @@ footer {
   background-repeat: no-repeat;
   background-position: top right;
 }
-
-footer form h3 {
+footer h3 {
   width: 200px;
   height: 53px;
   text-align: left;
@@ -183,26 +193,27 @@ form {
   height: 399px;
   width: 548px;
 }
-
-label {
-  font-size: 1em;
-  color: #fff;
-  text-align: left;
-}
-
 form input[type=text] {
   padding: 10px;
   margin: 5px 0;
   font-size: 1em;
-  color: #fff;
+  color: var(--colo);
   height: 50px;
+  width: 548px;
 }
-
+form input[id=message] {
+  height: 100px;
+}
 form input[type=submit] {
   width: 166px;
   height: 50px;
   background-color: var(--bgc);
   border-radius: 25px;
+}
+form label {
+  font-size: 1em;
+  color: #fff;
+  text-align: left;
 }
 
 .contactMethods {
@@ -210,13 +221,12 @@ form input[type=submit] {
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
-  height: 200.33x;
+  height: 200.33px;
   background-color: var(--bgc);
   width: 100vw;
   text-align: center;
   padding: 10px;
 }
-
 .contactMethods img {
   width: 29px;
   height: 40px;
@@ -230,8 +240,6 @@ form input[type=submit] {
   width: 100vw;
   height: 51px;
   padding: 10px;
-}
-
-.copyrights {
   justify-content: flex-start;
+  justify-content: space-between;
 }/*# sourceMappingURL=main.css.map */

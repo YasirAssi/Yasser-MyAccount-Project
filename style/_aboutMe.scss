@@ -4,27 +4,26 @@
     align-items: center;
     width: $width;
     height: 715px;
+
+    figcaption {
+        font: normal normal normal 20px/29px Heebo;
+    }
+
+    img {
+        width: 141px;
+        height: 139px;
+        border-radius: 50%;
+
+    }
+
+    figure {
+        width: 55%;
+        text-align: center;
+        margin: 13px;
+        width: 798px;
+        height: 232px;
+    }
 }
-
-.aboutMe figcaption {
-    font: normal normal normal 20px/29px Heebo;
-}
-
-.aboutMe img {
-    width: 141px;
-    height: 139px;
-    border-radius: 50%;
-
-}
-
-.aboutMe figure {
-    width: 55%;
-    text-align: center;
-    margin: 13px;
-    width: 798px;
-    height: 232px;
-}
-
 
 .btn1 {
     width: 260px;
