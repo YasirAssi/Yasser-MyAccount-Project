@@ -34,13 +34,13 @@ h2 {
     display: flex;
     flex-direction: column;
   }
+  .navHeader {
+    display: none;
+  }
   .unicode {
     display: block;
     position: fixed;
     z-index: 999;
-  }
-  .navHeader {
-    display: none;
   }
   .unicode:hover ~ .navHeader {
     display: block;

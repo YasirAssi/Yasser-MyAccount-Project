@@ -25,20 +25,19 @@
 @media (max-width:550px) {
 
     .navHeader {
-
         width: $width;
         display: flex;
         flex-direction: column;
+    }
+
+    .navHeader {
+        display: none;
     }
 
     .unicode {
         display: block;
         position: fixed;
         z-index: 999;
-    }
-
-    .navHeader {
-        display: none;
     }
 
     .unicode:hover~.navHeader {
