@@ -1,5 +1,5 @@
 .navHeader {
-    width: 100vw;
+    width: $width;
     height: 80px;
     position: fixed;
     top: 0;
@@ -25,7 +25,7 @@ ul {
 
     .navHeader {
 
-        width: 100%;
+        width: $width;
         display: flex;
         flex-direction: column;
     }

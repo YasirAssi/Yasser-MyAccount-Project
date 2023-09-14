@@ -4,7 +4,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 1920px;
+    width: $width;
 }
 
 .text-container {
@@ -13,4 +13,13 @@
     align-items: center;
     flex-direction: column;
     width: 55%;
+}
+
+.header-container>h1 {
+    font: normal normal 900 80px/118px Heebo;
+}
+
+.text-container>p {
+    font: normal normal medium 20px/30px Heebo;
+    text-align: center;
 }

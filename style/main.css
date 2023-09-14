@@ -42,7 +42,7 @@ ul {
 
 @media (max-width: 550px) {
   .navHeader {
-    width: 100%;
+    width: 100vw;
     display: flex;
     flex-direction: column;
   }
@@ -64,7 +64,7 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 1920px;
+  width: 100vw;
 }
 
 .text-container {
@@ -75,11 +75,34 @@ ul {
   width: 55%;
 }
 
+.header-container > h1 {
+  font: normal normal 900 80px/118px Heebo;
+}
+
+.text-container > p {
+  font: normal normal medium 20px/30px Heebo;
+  text-align: center;
+}
+
+.techUsed {
+  height: 130px;
+  width: 100vw;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.techUsed img {
+  height: 100px;
+  width: 100px;
+}
+
 .aboutMe {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 1920;
+  width: 100vw;
   height: 715px;
 }
 
@@ -110,7 +133,7 @@ ul {
 }
 
 .project {
-  width: 1920;
+  width: 100vw;
   height: 1558px;
 }
 
@@ -133,7 +156,7 @@ ul {
 footer {
   display: flex;
   flex-direction: flex-end;
-  width: 1920px;
+  width: 100vw;
   height: 958px;
   background-color: var(--colo);
   background-image: url(../tigerImages/Rectangle\ 41.png);
@@ -189,8 +212,9 @@ form input[type=submit] {
   flex-wrap: wrap;
   height: 200.33x;
   background-color: var(--bgc);
-  width: 1920px;
+  width: 100vw;
   text-align: center;
+  padding: 10px;
 }
 
 .contactMethods img {
@@ -203,8 +227,9 @@ form input[type=submit] {
   background: #000;
   font: normal normal normal 20px/29px Heebo;
   color: var(--colo);
-  width: 1920px;
+  width: 100vw;
   height: 51px;
+  padding: 10px;
 }
 
 .copyrights {

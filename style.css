@@ -58,9 +58,6 @@ ul {
     justify-content: flex-start;
 }
 
-a:last-child {
-    justify-content: flex-end;
-}
 
 .header-container>h1 {
     font: normal normal 900 80px/118px Heebo;

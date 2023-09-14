@@ -5,8 +5,9 @@
     flex-wrap: wrap;
     height: 200.33x;
     background-color: var(--bgc);
-    width: 1920px;
+    width: $width;
     text-align: center;
+    padding: 10px;
 }
 
 .contactMethods img {
