@@ -19,11 +19,14 @@ h2 {
     color: var(--colo);
 }
 
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--colo);
+}
+
 // @mixin btn {
 //     display: block;
-//     width: $btnWidth;
-//     height: $btnHeight;
-//     background: $btnColor 0% 0% no-repeat padding-box;
 //     border-radius: 25px;
 //     letter-spacing: 0.3px;
 //     text-decoration: none;

@@ -1,4 +1,4 @@
-.header-container {
+#header-container {
     background-image: linear-gradient(to bottom, rgba(101, 163, 235, 0.5), rgba(255, 255, 255, 0.5)), url(../tigerImages/colorSpectrum.jpg);
     height: 28.8125em;
     display: flex;
@@ -15,7 +15,7 @@
     width: 55%;
 }
 
-.header-container>h1 {
+#header-container>h1 {
     font: normal normal 900 80px/118px Heebo;
 }
 

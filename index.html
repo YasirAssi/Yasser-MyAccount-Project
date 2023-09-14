@@ -18,18 +18,21 @@
         <div class="unicode">&#9776;</div>
         <nav class="navHeader">
             <ul>
-                <li><a href="#">Main</a></li>
-                <li><a href="#">About Me</a></li>
-                <li><a href="#">Service</a></li>
-                <li><a href="#">Contact Us</a></li>
+                <li><a href="#header-container">Portfolio Intro</a></li>
+                <li><a href="#aboutMe">About Me</a></li>
+                <li><a href="#project">Projects</a></li>
+                <li><a href="#contactUs">Contact Us</a></li>
             </ul>
-            <img src="./tigerImages/yasirAsi.png" alt="yasirAsi">
-            <img src="./tigerImages/personalimage.png" alt="person icon">
+            <img src="./tigerImages/yasirAsi.png" alt="yasirAsi" class="navPh">
+            <img src="./tigerImages/personalimage.png" alt="person icon" class="navIcon">
+
         </nav>
     </header>
-    <section class="header-container">
+    <section id="header-container">
         <div class="text-container">
-            <h1>Portfolio</h1>
+            <a href="#top">
+                <h1>Portfolio</h1>
+            </a>
             <p>This my portfolio project, shwoing my skills in using HTML, CSS,
                 Bootstrap, and SASS ( First Module). My portfolio consists of six landing pages, each highlighting
                 different aspects of my web development
@@ -45,10 +48,12 @@
         <img src="./tigerImages/cssIcon.png" alt="CSS">
     </div>
 
-    <section class="aboutMe">
+    <section id="aboutMe">
         <figure>
             <img src="./tigerImages/personalPhoto.jpg" alt="Yasir's Photo">
-            <h2>About Me</h2>
+            <a href="#top">
+                <h2>About Me</h2>
+            </a>
             <figcaption>
                 Allow me to introduce myself. My name is Yasir Asi, and I am actively seeking a new career path in
                 the
@@ -57,16 +62,18 @@
                 a
                 Master's degree in Humanities.
             </figcaption>
-            <button class="btn1"><a href="./download/yasserAssi CV.pdf CV.pdf" download="CV">Download CV</a></button>
+            <button class="btn1"><a href="./download/yasserAssi CV.pdf" download="CV">Download CV</a></button>
         </figure>
     </section>
-    <section class="project">
-        <h2>6 Projects</h2>
+    <section id="project">
+        <a href="#top">
+            <h2>6 Projects</h2>
+        </a>
         <p>I chose 6 projects: Here and Now, Leader Ticket, Discover the World, Counsaltant, Maps and the final one is
             Coffe card </p>
         <div class="container">
             <div class="row">
-                <div class="col-sm-12 col-md-2 col-lg-4 col-xl-4">
+                <div class="col-sm-12 col-md-4">
                     <div class="card" style="width: 18rem;">
                         <img src="./tigerImages/hereAndNow.jpg" class="card-img-top" alt="hereAndNow">
                         <div class="card-body">
@@ -76,7 +83,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-1 col-md-2 col-lg-4 col-xl-4">
+                <div class="col-sm-12 col-md-4">
                     <div class="card" style="width: 18rem;">
                         <img src="./tigerImages/lead.jpg" class="card-img-top" alt="lead">
                         <div class="card-body">
@@ -86,7 +93,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-1 col-md-2 col-lg-4 col-xl-4">
+                <div class="col-sm-12 col-md-4">
                     <div class="card" style="width: 18rem;">
                         <img src="./tigerImages/discover.png" class="card-img-top" alt="discover">
                         <div class="card-body">
@@ -96,7 +103,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-1 col-md-2 col-lg-4 col-xl-4">
+                <div class="col-sm-12 col-md-4">
                     <div class="card" style="width: 18rem;">
                         <img src="./tigerImages/consulta.png" class="card-img-top" alt="consulta">
                         <div class="card-body">
@@ -106,7 +113,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-1 col-md-2 col-lg-4 col-xl-4">
+                <div class="col-sm-12 col-md-4">
                     <div class="card" style="width: 18rem;">
                         <img src="./tigerImages/maps.png" class="card-img-top" alt="maps">
                         <div class="card-body">
@@ -116,7 +123,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-1 col-md-2 col-lg-4 col-xl-4">
+                <div class="col-sm-12 col-md-4">
                     <div class="card" style="width: 18rem;">
                         <img src="./tigerImages/coffe.jpg" class="card-img-top" alt="coffe">
                         <div class="card-body">
@@ -130,9 +137,11 @@
         </div>
     </section>
 
-    <footer>
+    <footer id="contactUs">
         <form action="">
-            <h3>Contact Us</h3>
+            <a href="#top">
+                <h3>Contact Us</h3>
+            </a>
             <lable for="Full_Name"> Full Name</lable>
             <input type="text" id="Full Name" required><br>
             <lable for="E-mail">E-mail</lable>
@@ -143,6 +152,7 @@
             <input type="text" id="Message" required><br>
             <input type="submit" value="send">
         </form>
+        <img src="./tigerImages/Rectangle 41.png" alt="footerimg">
     </footer>
 
     <div class="contactMethods">

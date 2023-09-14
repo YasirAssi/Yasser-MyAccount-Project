@@ -1,25 +1,62 @@
-.navHeader,
-.unicode {
+.navHeader {
     width: $width;
     height: 80px;
     position: fixed;
     top: 0;
     border: 1px solid #000;
     background-color: #fff;
+    opacity: 1;
     z-index: 999;
 }
 
-// // ul {
-// //     list-style-type: none;
-// //     display: flex;
-// //     justify-content: space-evenly;
-// // }
+.unicode {
+    font-size: 1.2em;
+    color: black;
+    font-weight: bold;
+    padding: 5px;
+    display: none;
+}
 
-// // .unicode {
-// //     font-size: 2rem;
-// //     color: #000;
-// //     display: none;
-// //     margin: 0;
+nav ul {
+    list-style-type: none;
+    display: flex;
+
+}
+
+nav ul li a {
+    margin-top: 23px;
+    text-decoration: none;
+    width: 150px;
+    height: 70px;
+    color: #000;
+    display: block;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+nav ul li a:hover {
+    font-weight: bolder;
+}
+
+.navIcon {
+    width: 62px;
+    height: 62px;
+}
+
+.navPh {
+    width: 79px;
+    height: 35px;
+
+}
+
+// .navIcon {
+//     width: 62px;
+//     height: 62px;
+// }
+
+// .navPh {
+//     width: 79px;
+//     height: 35px;
 // }
 
 @media (max-width:550px) {
@@ -34,44 +71,55 @@
         display: none;
     }
 
-    .unicode {
+    .navIcon {
+        width: 43px;
+        height: 43px;
+    }
+
+    .unicode,
+    .navIcon {
         display: block;
         position: fixed;
         z-index: 999;
     }
 
+
+    nav ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+
+    nav ul li a {
+        background-color: var(--colo);
+        width: 300px;
+        border-bottom: 1px solid yellow;
+        text-align: left;
+    }
+
+    nav .unicode+ul {
+        display: none;
+    }
+
     .unicode:hover~.navHeader {
         display: block;
-
     }
 }
 
 
 
-.unicode {
-    font-size: 1.2em;
-    color: black;
-    font-weight: bold;
-    padding: 5px;
-    display: none;
-}
 
-nav ul {
-    list-style-type: none;
-    display: flex;
-}
 
-nav ul li a {
-    margin-top: 23px;
-    text-decoration: none;
-    width: 100px;
-    height: 70px;
-    color: #000;
-    display: block;
-    text-align: center;
-    font-size: 1.2em;
-}
 
-nav ul li a:hover {
-    font-weight: bolder;
-}
+// // ul {
+// //     list-style-type: none;
+// //     display: flex;
+// //     justify-content: space-evenly;
+// // }
+
+// // .unicode {
+// //     font-size: 2rem;
+// //     color: #000;
+// //     display: none;
+// //     margin: 0;
+// }

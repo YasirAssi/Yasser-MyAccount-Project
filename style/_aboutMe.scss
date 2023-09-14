@@ -1,9 +1,9 @@
-.aboutMe {
+#aboutMe {
     display: flex;
     justify-content: center;
     align-items: center;
     width: $width;
-    height: 715px;
+    height: 45em;
 
     figcaption {
         font: normal normal normal 20px/29px Heebo;
@@ -19,7 +19,6 @@
     figure {
         width: 55%;
         text-align: center;
-        margin: 13px;
         width: 798px;
         height: 232px;
     }
@@ -30,5 +29,5 @@
     height: 41px;
     border-radius: 25px;
     background-color: var(--bgc);
-    margin: 13px;
+    margin: 19px;
 }
