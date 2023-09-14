@@ -24,7 +24,7 @@ a {
 }
 
 .card {
-  height: 300px;
+  height: 290px;
 }
 
 .navHeader {
@@ -148,6 +148,7 @@ nav ul li a:hover {
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
+  background-color: rgba(248, 230, 246, 0.6);
 }
 .techUsed img {
   height: 100px;
@@ -160,6 +161,7 @@ nav ul li a:hover {
   align-items: center;
   width: 100vw;
   height: 45em;
+  background-color: rgba(245, 200, 238, 0.6);
 }
 #aboutMe figcaption {
   font: normal normal normal 20px/29px Heebo;
@@ -178,7 +180,6 @@ nav ul li a:hover {
 
 .btn1 {
   border-radius: 25px;
-  letter-spacing: 0.3px;
   text-decoration: none;
   line-height: 1;
   opacity: 1;
@@ -190,8 +191,9 @@ nav ul li a:hover {
 
 #project {
   width: 100vw;
-  height: 2000px;
+  height: 125em;
   background: #F6F6F6 0% 0% no-repeat padding-box;
+  padding: 60px;
 }
 #project p {
   display: flex;
@@ -204,12 +206,11 @@ nav ul li a:hover {
 
 .btn {
   border-radius: 25px;
-  letter-spacing: 0.3px;
   text-decoration: none;
   line-height: 1;
   opacity: 1;
   background-color: var(--bgc);
-  width: 200px;
+  width: 250px;
   height: 30px;
 }
 

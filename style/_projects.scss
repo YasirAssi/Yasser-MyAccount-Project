@@ -1,7 +1,8 @@
 #project {
     width: $width;
-    height: 2000px;
+    height: 125em;
     background: #F6F6F6 0% 0% no-repeat padding-box;
+    padding: 60px;
 
     p {
         display: flex;
@@ -15,6 +16,6 @@
 
 .btn {
     @include bTn;
-    width: 200px;
+    width: 250px;
     height: 30px;
 }
