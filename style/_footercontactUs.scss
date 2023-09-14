@@ -1,0 +1,53 @@
+footer {
+    display: flex;
+    flex-direction: flex-end;
+    width: 1920px;
+    height: 958px;
+    background-color: var(--colo);
+    background-image: url(../tigerImages/Rectangle\ 41.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+
+footer form h3 {
+    width: 200px;
+    height: 53px;
+    text-align: left;
+    font: normal normal 900 36px/53px Heebo;
+    color: #fff;
+    font-size: 2.25em;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    padding: 20px;
+    margin: 40px;
+    height: 399px;
+    width: 548px;
+}
+
+label {
+    font-size: 1em;
+    color: #fff;
+    text-align: left;
+}
+
+form input[type="text"] {
+    padding: 10px;
+    margin: 5px 0;
+    font-size: 1em;
+    color: #fff;
+    height: 50px;
+}
+
+
+
+form input[type="submit"] {
+    width: 166px;
+    height: 50px;
+    background-color: var(--bgc);
+    border-radius: 25px;
+}

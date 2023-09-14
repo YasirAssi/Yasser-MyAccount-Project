@@ -1,0 +1,47 @@
+.navHeader {
+    width: 100vw;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    border: 1px solid #000;
+    background-color: #fff;
+    z-index: 999;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.unicode {
+    font-size: 2rem;
+    color: #000;
+    display: none;
+    margin: 0;
+}
+
+@media (max-width:550px) {
+
+    .navHeader {
+
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .unicode {
+        display: block;
+        position: fixed;
+        z-index: 999;
+    }
+
+    .navHeader {
+        display: none;
+    }
+
+    .unicode:hover~.navHeader {
+        display: block;
+
+    }
+}

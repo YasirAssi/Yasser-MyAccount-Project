@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --colo: #3A3A3A;
+    --bgc: #1fc0e1;
+}
+
+h2 {
+    font: normal normal 900 35px/52px Heebo;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--colo);
+}

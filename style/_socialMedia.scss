@@ -1,0 +1,15 @@
+.contactMethods {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 200.33x;
+    background-color: var(--bgc);
+    width: 1920px;
+    text-align: center;
+}
+
+.contactMethods img {
+    width: 29px;
+    height: 40px;
+}

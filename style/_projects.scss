@@ -1,0 +1,22 @@
+.project {
+    width: 1920;
+    height: 1558px;
+}
+
+.btn {
+    width: 200px;
+    height: 30px;
+    border-radius: 25px;
+    background-color: var(--bgc);
+
+}
+
+.project p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font: normal normal normal 20px/29px Heebo;
+    color: var(--colo);
+
+}

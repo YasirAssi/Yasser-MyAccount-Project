@@ -1,0 +1,35 @@
+.aboutMe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1920;
+    height: 715px;
+}
+
+.aboutMe figcaption {
+    font: normal normal normal 20px/29px Heebo;
+}
+
+.aboutMe img {
+    width: 141px;
+    height: 139px;
+    border-radius: 50%;
+
+}
+
+.aboutMe figure {
+    width: 55%;
+    text-align: center;
+    margin: 13px;
+    width: 798px;
+    height: 232px;
+}
+
+
+.btn1 {
+    width: 260px;
+    height: 41px;
+    border-radius: 25px;
+    background-color: var(--bgc);
+    margin: 13px;
+}

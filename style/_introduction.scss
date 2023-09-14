@@ -1,0 +1,16 @@
+.header-container {
+    background-image: linear-gradient(to bottom, rgba(101, 163, 235, 0.5), rgba(255, 255, 255, 0.5)), url(../tigerImages/colorSpectrum.jpg);
+    height: 28.8125em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1920px;
+}
+
+.text-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 55%;
+}

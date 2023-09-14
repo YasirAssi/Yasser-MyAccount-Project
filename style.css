@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-align: center;
 }
 
 :root {
@@ -69,9 +70,7 @@ a:last-child {
     font: normal normal medium 20px/30px Heebo;
 }
 
-.aboutMe figcaption {
-    font: normal normal normal 20px/29px Heebo;
-}
+
 
 .header-container {
     background-image: linear-gradient(to bottom, rgba(101, 163, 235, 0.5), rgba(255, 255, 255, 0.5)), url(./tigerImages/colorSpectrum.jpg);
@@ -89,7 +88,6 @@ a:last-child {
     align-items: center;
     flex-direction: column;
     width: 55%;
-    text-align: center;
 }
 
 .techUsed {
@@ -107,6 +105,10 @@ a:last-child {
     align-items: center;
     width: 1920;
     height: 715px;
+}
+
+.aboutMe figcaption {
+    font: normal normal normal 20px/29px Heebo;
 }
 
 h2 {
