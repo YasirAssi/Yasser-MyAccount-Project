@@ -24,7 +24,8 @@ a {
 }
 
 .card {
-  height: 290px;
+  height: 280px;
+  margin: 5px;
 }
 
 .navHeader {
@@ -192,7 +193,7 @@ nav ul li a:hover {
 #project {
   width: 100vw;
   height: 125em;
-  background: #F6F6F6 0% 0% no-repeat padding-box;
+  background: #aba9a9 0% 0% no-repeat padding-box;
   padding: 60px;
 }
 #project p {
