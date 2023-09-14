@@ -1,6 +1,6 @@
 #project {
     width: $width;
-    height: 1850px;
+    height: 2000px;
     background: #F6F6F6 0% 0% no-repeat padding-box;
 
     p {
@@ -10,13 +10,11 @@
         text-align: center;
         font: normal normal normal 20px/29px Heebo;
         color: var(--colo);
-
     }
 }
 
 .btn {
+    @include bTn;
     width: 200px;
     height: 30px;
-    border-radius: 25px;
-    background-color: var(--bgc);
 }

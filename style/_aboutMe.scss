@@ -25,9 +25,8 @@
 }
 
 .btn1 {
+    @include bTn;
     width: 260px;
     height: 41px;
-    border-radius: 25px;
-    background-color: var(--bgc);
     margin: 19px;
 }
