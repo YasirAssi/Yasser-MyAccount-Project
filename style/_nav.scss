@@ -52,58 +52,26 @@ nav ul li a:hover {
 
 }
 
-
-
 @media (max-width:550px) {
 
     .navHeader {
-
-        display: none;
-    }
-
-
-
-    nav ul {
         width: $width;
+        display: flex;
         flex-direction: column;
     }
 
-
-    nav ul li a {
-        background-color: var(--bgc);
-        width: 300px;
-        border-bottom: 1px solid yellow;
-        text-align: left;
-    }
-
-
-
-    header .unicode:hover {
-        display: block;
-    }
-}
-
-
-@media (max-width:550px) {
-
     .navHeader {
-
         display: none;
     }
 
-    nav ul {
-        width: 100%;
-        flex-direction: column;
-    }
-
-    nav ul li a {
-        background-color: var(--bgc);
-        width: 300px;
-        border-bottom: 1px solid yellow;
-        text-align: left;
-    }
-
-    header .unicode:hover {
+    .unicode {
         display: block;
+        position: fixed;
+        z-index: 999;
+    }
+
+    .unicode:hover~.navHeader {
+        display: block;
+
     }
 }
