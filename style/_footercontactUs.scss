@@ -2,15 +2,15 @@ footer {
     display: flex;
     flex-direction: flex-end;
     width: $width;
-    height: 88.7%;
+    height: 960px;
     background-color: var(--colo);
     background-repeat: no-repeat;
     background-position: top right;
     margin: 0 0;
 
     h3 {
-        width: 10.42%;
-        height: 5%;
+        width: 270px;
+        height: 53px;
         text-align: left;
         font: normal normal 900 36px/53px Heebo;
         color: #fff;
@@ -18,8 +18,8 @@ footer {
     }
 
     img {
-        width: 40%;
-        height: 62%;
+        width: 740px;
+        height: 660px;
     }
 }
 
@@ -28,14 +28,14 @@ form {
     flex-direction: column;
     align-items: left;
     justify-content: left;
-    padding: 1.25em;
-    margin: 2.5em;
-    height: 37%;
-    width: 28.5%;
+    padding: 20px;
+    margin: 40px;
+    height: 640px;
+    width: 550px;
 
     input[type="text"] {
-        padding: 0.625em;
-        margin: 0.1325em 0;
+        padding: 10px;
+        margin: 5px 0;
         font-size: 1em;
         color: var(--colo);
         height: 6vh;
@@ -43,14 +43,14 @@ form {
     }
 
     input[ id="message"] {
-        height: 6.25em;
+        height: 100px;
     }
 
     input[type="submit"] {
-        width: 10.375;
-        height: 3.125em;
+        width: 166px;
+        height: 50px;
         background-color: var(--bgc);
-        border-radius: 1.5625em;
+        border-radius: 25px;
     }
 
     label {

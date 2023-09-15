@@ -24,12 +24,12 @@ a {
 }
 
 .card {
-  height: 280px;
-  margin: 5px;
+  height: 26%;
+  margin: 0.1325em;
 }
 
 .navHeader {
-  width: 100vw;
+  width: 100%;
   height: 80px;
   position: fixed;
   top: 0;
@@ -47,6 +47,7 @@ a {
   font-weight: bold;
   padding: 5px;
   display: none;
+  width: 100%;
 }
 
 nav ul {
@@ -70,8 +71,8 @@ nav ul li a:hover {
 }
 
 .navIcon {
-  width: 62px;
-  height: 62px;
+  width: 46px;
+  height: 46px;
 }
 
 .navPh {
@@ -81,23 +82,7 @@ nav ul li a:hover {
 
 @media (max-width: 550px) {
   .navHeader {
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-  }
-  .navHeader {
     display: none;
-  }
-  .navIcon {
-    width: 43px;
-    height: 43px;
-    margin-right: 0;
-  }
-  .unicode,
-  .navIcon {
-    display: block;
-    position: fixed;
-    z-index: 999;
   }
   nav ul {
     width: 100%;
@@ -109,10 +94,25 @@ nav ul li a:hover {
     border-bottom: 1px solid yellow;
     text-align: left;
   }
-  nav .unicode + ul {
+  header .unicode:hover {
+    display: block;
+  }
+}
+@media (max-width: 550px) {
+  .navHeader {
     display: none;
   }
-  .unicode:hover ~ .navHeader {
+  nav ul {
+    width: 100%;
+    flex-direction: column;
+  }
+  nav ul li a {
+    background-color: var(--bgc);
+    width: 300px;
+    border-bottom: 1px solid yellow;
+    text-align: left;
+  }
+  header .unicode:hover {
     display: block;
   }
 }
@@ -122,7 +122,7 @@ nav ul li a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100vw;
+  width: 100%;
 }
 
 .text-container {
@@ -143,8 +143,8 @@ nav ul li a:hover {
 }
 
 .techUsed {
-  height: 9.125em;
-  width: 100vw;
+  height: 146px;
+  width: 100%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -160,7 +160,7 @@ nav ul li a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100vw;
+  width: 100%;
   height: 45em;
   background-color: rgba(245, 200, 238, 0.6);
 }
@@ -168,19 +168,18 @@ nav ul li a:hover {
   font: normal normal normal 20px/29px Heebo;
 }
 #aboutMe img {
-  width: 141px;
-  height: 139px;
+  width: 140px;
+  height: 140px;
   border-radius: 50%;
 }
 #aboutMe figure {
-  width: 55%;
-  text-align: center;
   width: 798px;
   height: 232px;
+  text-align: center;
 }
 
 .btn1 {
-  border-radius: 25px;
+  border-radius: 1.5625em;
   text-decoration: none;
   line-height: 1;
   opacity: 1;
@@ -191,8 +190,8 @@ nav ul li a:hover {
 }
 
 #project {
-  width: 100vw;
-  height: 125em;
+  width: 100%;
+  height: 1900px;
   background: #aba9a9 0% 0% no-repeat padding-box;
   padding: 60px;
 }
@@ -206,7 +205,7 @@ nav ul li a:hover {
 }
 
 .btn {
-  border-radius: 25px;
+  border-radius: 1.5625em;
   text-decoration: none;
   line-height: 1;
   opacity: 1;
@@ -218,15 +217,15 @@ nav ul li a:hover {
 footer {
   display: flex;
   flex-direction: flex-end;
-  width: 100vw;
-  height: 958px;
+  width: 100%;
+  height: 960px;
   background-color: var(--colo);
   background-repeat: no-repeat;
   background-position: top right;
   margin: 0 0;
 }
 footer h3 {
-  width: 200px;
+  width: 270px;
   height: 53px;
   text-align: left;
   font: normal normal 900 36px/53px Heebo;
@@ -234,8 +233,8 @@ footer h3 {
   font-size: 2.25em;
 }
 footer img {
-  width: 21vw;
-  height: 31.3vh;
+  width: 740px;
+  height: 660px;
 }
 
 form {
@@ -245,8 +244,8 @@ form {
   justify-content: left;
   padding: 20px;
   margin: 40px;
-  height: 399px;
-  width: 548px;
+  height: 640px;
+  width: 550px;
 }
 form input[type=text] {
   padding: 10px;
@@ -279,13 +278,13 @@ form label {
   flex-wrap: wrap;
   height: 200.33px;
   background-color: var(--bgc);
-  width: 100vw;
+  width: 100%;
   text-align: center;
   padding: 10px;
 }
 .contactMethods img {
-  width: 29px;
-  height: 40px;
+  width: 41px;
+  height: 41px;
 }
 
 .copyRights {
@@ -293,7 +292,7 @@ form label {
   background: #000;
   font: normal normal normal 20px/29px Heebo;
   color: var(--colo);
-  width: 100vw;
+  width: 100%;
   height: 51px;
   padding: 10px;
   justify-content: flex-start;

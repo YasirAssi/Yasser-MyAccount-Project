@@ -11,23 +11,22 @@
     }
 
     img {
-        width: 7.3%;
-        height: 12.9%;
+        width: 140px;
+        height: 140px;
         border-radius: 50%;
 
     }
 
     figure {
-        width: 55%;
+        width: 798px;
+        height: 232px;
         text-align: center;
-        width: 41.6%;
-        height: 21.5%;
     }
 }
 
 .btn1 {
     @include bTn;
-    width: 13.5%;
-    height: 3.8%;
+    width: 260px;
+    height: 41px;
     margin: 19px;
 }

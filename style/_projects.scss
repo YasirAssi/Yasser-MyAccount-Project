@@ -1,6 +1,6 @@
 #project {
     width: $width;
-    height: 100vh;
+    height: 1900px;
     background: #aba9a9 0% 0% no-repeat padding-box;
     padding: 60px;
 
@@ -16,6 +16,6 @@
 
 .btn {
     @include bTn;
-    width: 15.625em;
-    height: 1.875em;
+    width: 250px;
+    height: 30px;
 }
