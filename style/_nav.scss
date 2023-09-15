@@ -1,6 +1,6 @@
 .navHeader {
     width: $width;
-    height: 80px;
+    height: 5em;
     position: fixed;
     top: 0;
     border: 1px solid #000;
@@ -11,21 +11,22 @@
     align-items: center;
 }
 
-.unicode {
+#unicode {
     font-size: 1.2em;
     color: black;
     font-weight: bold;
     padding: 0.3125em;
     display: none;
     width: $width;
+
 }
 
 nav ul {
     list-style-type: none;
     display: flex;
     flex-grow: 0.9;
-    margin-bottom: 0;
-
+    margin: 0;
+    padding: 0;
 }
 
 nav ul li a {
@@ -56,16 +57,11 @@ nav ul li a:hover {
 
 @media (max-width:550px) {
 
-    .navHeader {
-
-        display: none;
-    }
-
-
-
-    nav ul {
+    .navHeader ul {
         width: $width;
         flex-direction: column;
+        align-items: flex-start;
+        display: none;
     }
 
 
@@ -76,27 +72,9 @@ nav ul li a:hover {
         text-align: left;
     }
 
-
-
-    header .unicode:hover {
+    header #unicode:hover+.navHeader {
         display: block;
+        cursor: pointer;
+
     }
 }
-
-
-
-
-
-
-// // ul {
-// //     list-style-type: none;
-// //     display: flex;
-// //     justify-content: space-evenly;
-// // }
-
-// // .unicode {
-// //     font-size: 2rem;
-// //     color: #000;
-// //     display: none;
-// //     margin: 0;
-// }
