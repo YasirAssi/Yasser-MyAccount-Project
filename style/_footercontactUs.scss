@@ -28,14 +28,14 @@ form {
     flex-direction: column;
     align-items: left;
     justify-content: left;
-    padding: 20px;
-    margin: 40px;
+    padding: 1.25em;
+    margin: 2.5em;
     height: 37%;
     width: 28.5%;
 
     input[type="text"] {
-        padding: 10px;
-        margin: 5px 0;
+        padding: 0.625em;
+        margin: 0.1325em 0;
         font-size: 1em;
         color: var(--colo);
         height: 6vh;
@@ -43,14 +43,14 @@ form {
     }
 
     input[ id="message"] {
-        height: 100px;
+        height: 6.25em;
     }
 
     input[type="submit"] {
-        width: 166px;
-        height: 50px;
+        width: 10.375;
+        height: 3.125em;
         background-color: var(--bgc);
-        border-radius: 25px;
+        border-radius: 1.5625em;
     }
 
     label {

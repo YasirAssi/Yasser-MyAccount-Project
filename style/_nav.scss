@@ -15,7 +15,7 @@
     font-size: 1.2em;
     color: black;
     font-weight: bold;
-    padding: 5px;
+    padding: 0.3125em;
     display: none;
     width: $width;
 }
@@ -30,7 +30,7 @@ nav ul {
 
 nav ul li a {
     text-decoration: none;
-    width: 150px;
+    width: 9.375em;
     color: #000;
     display: block;
     text-align: center;
@@ -42,13 +42,13 @@ nav ul li a:hover {
 }
 
 .navIcon {
-    width: 62px;
-    height: 62px;
+    width: 3.875em;
+    height: 3.875em;
 }
 
 .navPh {
-    width: 79px;
-    height: 35px;
+    width: 4.9375em;
+    height: 2.1875em;
 
 }
 
@@ -64,15 +64,15 @@ nav ul li a:hover {
 
 
     nav ul {
-        width: 100%;
+        width: $width;
         flex-direction: column;
     }
 
 
     nav ul li a {
         background-color: var(--bgc);
-        width: 300px;
-        border-bottom: 1px solid yellow;
+        width: 18.75em;
+        border-bottom: 0.0625em solid yellow;
         text-align: left;
     }
 
