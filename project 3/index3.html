@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Discover The World</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Assistant:wght@500;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Assistant:wght@500;700&family=Caveat&family=Heebo:wght@900&display=swap');
 
         * {
             margin: 0;
@@ -16,27 +16,24 @@
 
         body {
             background-color: #E5EEFF;
+            width: 100vw;
+            height: 100vh;
         }
 
         .container {
-            width: 100vw;
-            height: 100vh;
-            margin: 0 auto;
+            width: 50vw;
+            height: 50vh;
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: repeat(2, 1fr);
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(6, 1fr);
             grid-template-areas:
                 "box box beach cow"
                 "box box farm island"
                 "isolation monkey view oldman"
-                "sea sunset form"
-                "temple train form"
-                "trees ladies form";
+                "sea sunset form form"
+                "temple train form form"
+                "trees Ladies form form";
             gap: 10px;
-        }
-
-        .item {
-            display: grid;
         }
 
         .container .box {
@@ -56,7 +53,7 @@
         }
 
         img .island {
-            grid-area: isalnd;
+            grid-area: island;
         }
 
         img .isolation {
@@ -96,10 +93,10 @@
         }
 
         img .Ladies {
-            grid-area: ladies;
+            grid-area: Ladies;
         }
 
-        form {
+        .container form {
             grid-area: form;
         }
 
@@ -107,13 +104,9 @@
             background-color: #020253;
             opacity: 1;
             z-index: 999;
-            width: 300px;
-            height: 500px;
             text-align: center;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+            display: grid;
+            place-content: center;
         }
 
         .box h1 {
@@ -126,22 +119,32 @@
             color: #F9F9F9;
         }
 
-        form {
+        .container form {
             display: flex;
             flex-direction: column;
             align-items: left;
             justify-content: left;
             padding: 20px;
-            margin: 20px;
-            height: 350px;
-            width: 450px;
+            background-color: #8E097C;
+        }
+
+        form h3 {
+            font: normal normal bold 35px/46px Assistant;
+            color: #fff;
+            text-align: center;
+        }
+
+        form p {
+            font: normal normal bold 20px/26px Assistant;
+            color: #fff;
+            text-align: center;
         }
 
         form input[type="text"] {
             padding: 10px;
             margin: 5px 0;
             font-size: 1em;
-            color: var(--colo);
+            color: #3A3A3A;
             height: 6vh;
             width: 28.5vw;
         }
@@ -153,8 +156,15 @@
         form input[type="submit"] {
             width: 166px;
             height: 50px;
-            background-color: var(--bgc);
+            background-color: #1fc0e1;
             border-radius: 25px;
+        }
+
+        form label {
+            font-size: normal normal bold 16px/24px Heebo;
+            color: #0EE1DA;
+            text-align: left;
+            opacity: 1;
         }
     </style>
 </head>
@@ -162,38 +172,38 @@
 <body>
     <div class="container">
 
-        <div class="item box">
+        <div class="box">
             <h1>Discover the world</h1>
             <p>
                 Embrace the world with boundless enthusiasm! Every corner of our planet holds a unique wonder waiting to
                 be uncovered.
             </p>
         </div>
-        <img src="./project3 images/beach.png" alt="beach" class="item beach">
-        <img src="./project3 images/cow.png" alt="cow" class="item cow">
-        <img src="./project3 images/farm.png" alt="farm" class="item farm">
-        <img src="./project3 images/island.png" alt="island" class="item island">
-        <img src="./project3 images/isolation.png" alt="isolation" class="item isolation">
-        <img src="./project3 images/monkey.png" alt="monkey" class="item monkey">
-        <img src="./project3 images/mountainview.png" alt="view" class="item view">
-        <img src="./project3 images/oldIndian.png" alt="oldman" class="item oldman">
-        <img src="./project3 images/sea.png" alt="sea" class="item sea">
-        <img src="./project3 images/sunset.png" alt="sunset" class="item sunset">
-        <img src="./project3 images/temple.png" alt="temple" class="item temple">
-        <img src="./project3 images/train.png" alt="train" class="item train">
-        <img src="./project3 images/trees.png" alt="trees" class="item trees">
-        <img src="./project3 images/twoLadies.png" alt="Ladies" class="item Ladies">
-
-
+        <img src="./project3 images/beach.png" alt="beach" class="beach">
+        <img src="./project3 images/cow.png" alt="cow" class="cow">
+        <img src="./project3 images/farm.png" alt="farm" class="farm">
+        <img src="./project3 images/island.png" alt="island" class="island">
+        <img src="./project3 images/isolation.png" alt="isolation" class="isolation">
+        <img src="./project3 images/monkey.png" alt="monkey" class="monkey">
+        <img src="./project3 images/mountainview.png" alt="view" class="view">
+        <img src="./project3 images/oldIndian.png" alt="oldman" class="oldman">
+        <img src="./project3 images/sea.png" alt="sea" class="sea">
+        <img src="./project3 images/sunset.png" alt="sunset" class="sunset">
+        <img src="./project3 images/temple.png" alt="temple" class="temple">
+        <img src="./project3 images/train.png" alt="train" class="train">
+        <img src="./project3 images/trees.png" alt="trees" class="trees">
+        <img src="./project3 images/twoLadies.png" alt="Ladies" class="Ladies">
 
         <form action="">
-            <lable for="Full_Name"> Full Name</lable>
-            <input type="text" id="Full Name" required><br>
-            <lable for="E-mail">E-mail</lable>
+            <h3>Tell Us About Your Adventure</h3>
+            <p>We appreciate your feedback!</p>
+            <label for="Full_Name"> Full Name</label>
+            <input type="text" id="Full_Name" required><br>
+            <label for="E-mail">E-mail</label>
             <input type="text" id="E-mail" required><br>
-            <lable for="Phone_Number">Phone Number</lable>
+            <label for="Phone_Number">Phone Number</label>
             <input type="text" id="Phone_Number" required><br>
-            <lable for="Message">Experience</lable>
+            <label for="Message">Experience</label>
             <input type="text" id="Experience" required><br>
             <input type="submit" value="send">
         </form>
