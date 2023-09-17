@@ -27,12 +27,12 @@ a {
 
 
 .card {
-    height: 26%;
-    margin: 0.1325em;
+    height: 280px;
+    margin: 5px;
 }
 
 @mixin bTn {
-    border-radius: 1.5625em;
+    border-radius: 25px;
     text-decoration: none;
     line-height: 1;
     opacity: 1;

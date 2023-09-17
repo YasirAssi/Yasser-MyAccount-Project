@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover The World</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Assistant:wght@500;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #E5EEFF;
+        }
+
+        .container {
+            width: 100vw;
+            height: 100vh;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            grid-template-areas:
+                "box box beach cow"
+                "box box farm island"
+                "isolation monkey view oldman"
+                "sea sunset form"
+                "temple train form"
+                "trees ladies form";
+            gap: 10px;
+        }
+
+        .item {
+            display: grid;
+        }
+
+        .container .box {
+            grid-area: box;
+        }
+
+        img .beach {
+            grid-area: beach;
+        }
+
+        img .cow {
+            grid-area: cow;
+        }
+
+        img .farm {
+            grid-area: farm;
+        }
+
+        img .island {
+            grid-area: isalnd;
+        }
+
+        img .isolation {
+            grid-area: isolation;
+        }
+
+        img .monkey {
+            grid-area: monkey;
+        }
+
+        img .view {
+            grid-area: view;
+        }
+
+        img .oldman {
+            grid-area: oldman;
+        }
+
+        img .sea {
+            grid-area: sea;
+        }
+
+        img .sunset {
+            grid-area: sunset;
+        }
+
+        img .temple {
+            grid-area: temple;
+        }
+
+        img .train {
+            grid-area: train;
+        }
+
+        img .trees {
+            grid-area: trees;
+        }
+
+        img .Ladies {
+            grid-area: ladies;
+        }
+
+        form {
+            grid-area: form;
+        }
+
+        .box {
+            background-color: #020253;
+            opacity: 1;
+            z-index: 999;
+            width: 300px;
+            height: 500px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box h1 {
+            font: normal normal bold 30px/50px Assistant;
+            color: #0EE1DA;
+        }
+
+        .box p {
+            font: normal normal normal 10px/15px Assistant;
+            color: #F9F9F9;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: left;
+            justify-content: left;
+            padding: 20px;
+            margin: 20px;
+            height: 350px;
+            width: 450px;
+        }
+
+        form input[type="text"] {
+            padding: 10px;
+            margin: 5px 0;
+            font-size: 1em;
+            color: var(--colo);
+            height: 6vh;
+            width: 28.5vw;
+        }
+
+        form input[ id="message"] {
+            height: 100px;
+        }
+
+        form input[type="submit"] {
+            width: 166px;
+            height: 50px;
+            background-color: var(--bgc);
+            border-radius: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="item box">
+            <h1>Discover the world</h1>
+            <p>
+                Embrace the world with boundless enthusiasm! Every corner of our planet holds a unique wonder waiting to
+                be uncovered.
+            </p>
+        </div>
+        <img src="./project3 images/beach.png" alt="beach" class="item beach">
+        <img src="./project3 images/cow.png" alt="cow" class="item cow">
+        <img src="./project3 images/farm.png" alt="farm" class="item farm">
+        <img src="./project3 images/island.png" alt="island" class="item island">
+        <img src="./project3 images/isolation.png" alt="isolation" class="item isolation">
+        <img src="./project3 images/monkey.png" alt="monkey" class="item monkey">
+        <img src="./project3 images/mountainview.png" alt="view" class="item view">
+        <img src="./project3 images/oldIndian.png" alt="oldman" class="item oldman">
+        <img src="./project3 images/sea.png" alt="sea" class="item sea">
+        <img src="./project3 images/sunset.png" alt="sunset" class="item sunset">
+        <img src="./project3 images/temple.png" alt="temple" class="item temple">
+        <img src="./project3 images/train.png" alt="train" class="item train">
+        <img src="./project3 images/trees.png" alt="trees" class="item trees">
+        <img src="./project3 images/twoLadies.png" alt="Ladies" class="item Ladies">
+
+
+
+        <form action="">
+            <lable for="Full_Name"> Full Name</lable>
+            <input type="text" id="Full Name" required><br>
+            <lable for="E-mail">E-mail</lable>
+            <input type="text" id="E-mail" required><br>
+            <lable for="Phone_Number">Phone Number</lable>
+            <input type="text" id="Phone_Number" required><br>
+            <lable for="Message">Experience</lable>
+            <input type="text" id="Experience" required><br>
+            <input type="submit" value="send">
+        </form>
+
+    </div>
+
+</body>
+
+</html>
