@@ -11,13 +11,12 @@
     align-items: center;
 }
 
-.unicode {
+header #unicode {
     font-size: 1.2em;
     color: black;
     font-weight: bold;
     padding: 5px;
-    display: none;
-    width: $width;
+    cursor: pointer;
 }
 
 nav ul {
@@ -49,29 +48,81 @@ nav ul li a:hover {
 .navPh {
     width: 79px;
     height: 35px;
-
 }
 
-@media (max-width:550px) {
+#unicode:hover+ul {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: #333;
+    top: 100%;
+    left: 0;
+}
 
-    .navHeader {
-        width: $width;
-        display: flex;
+#unicode:hover+ul li {
+    margin: 0;
+    padding: 10px 20px;
+    width: 100%;
+    text-align: center;
+}
+
+#unicode:hover+ul a {
+    color: white;
+    text-decoration: none;
+}
+
+
+ul li a {
+    display: none;
+}
+
+@media (max-width:800px) {
+    ul li {
         flex-direction: column;
-    }
-
-    .navHeader {
+        align-items: flex-start;
         display: none;
     }
 
-    .unicode {
+    #unicode {
         display: block;
-        position: fixed;
         z-index: 999;
     }
-
-    header .unicode:hover~.navHeader {
-        display: block;
-
-    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//     .navHeader {
+//         width: $width;
+//         display: flex;
+//         flex-direction: column;
+//     }
+
+//     .navHeader {
+//         display: none;
+//     }
+
+//     .unicode {
+//         display: block;
+//         position: fixed;
+//         z-index: 999;
+//     }
+
+//     header .unicode:hover~.navHeader {
+//         display: block;
+
+//     }
+// }

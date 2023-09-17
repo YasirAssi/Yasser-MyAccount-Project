@@ -30,13 +30,12 @@ a {
     align-items: center;
 }
 
-.unicode {
+header #unicode {
     font-size: 1.2em;
     color: black;
     font-weight: bold;
     padding: 5px;
     display: none;
-    width: var(--width);
 }
 
 nav ul {
@@ -69,24 +68,51 @@ nav ul li a:hover {
     height: 35px;
 }
 
+#unicode:hover+ul {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: #333;
+    top: 100%;
+    left: 0;
+}
+
+#unicode:hover+ul li {
+    margin: 0;
+    padding: 10px 20px;
+    width: 100%;
+    text-align: center;
+}
+
+#unicode:hover+ul a {
+    color: white;
+    text-decoration: none;
+}
+
+
+ul li a {
+    display: none;
+}
+
 @media (max-width: 800px) {
-    .navHeader {
-        width: var(--width);
-        display: flex;
+
+    ul li {
         flex-direction: column;
+        align-items: flex-start;
+        display: none;
     }
 
     .navHeader {
         display: none;
     }
 
-    .unicode {
+    #unicode {
         display: block;
         position: fixed;
-        z-index: 999;
+
     }
 
-    .unicode:hover~.navHeader {
+    #unicode:hover~ul {
         display: block;
     }
 }
@@ -114,7 +140,18 @@ nav ul li a:hover {
 
 .text-container>p {
     font: normal normal medium 20px/30px Heebo;
-    text-align: center;
+    /* text-align: center; */
+}
+
+.btn1 {
+    border-radius: 25px;
+    text-decoration: none;
+    opacity: 1;
+    background-color: var(--bgc);
+    color: var(--colo);
+    width: 260px;
+    height: 41px;
+    margin: 19px;
 }
 
 .techUsed {
@@ -132,16 +169,7 @@ nav ul li a:hover {
     width: 100px;
 }
 
-.btn1 {
-    border-radius: 25px;
-    text-decoration: none;
-    line-height: 1;
-    opacity: 1;
-    background-color: var(--bgc);
-    width: 260px;
-    height: 41px;
-    margin: 19px;
-}
+
 
 .copyRights {
     display: flex;
