@@ -237,8 +237,8 @@ form input[type=text] {
   height: 6vh;
   width: 28.5vw;
 }
-form input[id=Experience] {
-  height: 100px;
+form input[id=Message] {
+  height: 200px;
 }
 form input[type=submit] {
   width: 166px;
