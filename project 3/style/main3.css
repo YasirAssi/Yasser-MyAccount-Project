@@ -69,7 +69,7 @@ nav ul li a:hover {
     height: 35px;
 }
 
-@media (max-width: 550px) {
+@media (max-width: 800px) {
     .navHeader {
         width: var(--width);
         display: flex;

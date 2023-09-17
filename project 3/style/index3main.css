@@ -8,13 +8,13 @@
 
 body {
     background-color: #E5EEFF;
-    width: 100vw;
-    height: 100vh;
+    /* width: ;
+    height: ; */
 }
 
 .container {
-    width: 50vw;
-    height: 50vh;
+    /* width: 50%;
+    height: 50%; */
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(6, 1fr);
@@ -142,7 +142,7 @@ form input[type="text"] {
 }
 
 form input[ id="message"] {
-    height: 100px;
+    height: 300px;
 }
 
 form input[type="submit"] {
@@ -150,6 +150,7 @@ form input[type="submit"] {
     height: 50px;
     background-color: #1fc0e1;
     border-radius: 25px;
+    cursor: pointer;
 }
 
 form label {
