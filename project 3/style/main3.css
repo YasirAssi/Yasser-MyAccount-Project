@@ -147,7 +147,7 @@ nav ul li a:hover {
     display: flex;
     background: #000;
     font: normal normal normal 20px/29px Heebo;
-    color: var(--colo);
+    color: #fff;
     width: var(--width);
     height: 51px;
     padding: 10px;
