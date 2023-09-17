@@ -6,15 +6,15 @@
     box-sizing: border-box;
 }
 
+:root {
+    --width: 100%;
+}
+
 body {
     background-color: #E5EEFF;
-    /* width: ;
-    height: ; */
 }
 
 .container {
-    /* width: 50%;
-    height: 50%; */
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(6, 1fr);
@@ -156,6 +156,106 @@ img .Ladies {
 }
 
 .form label {
-    font-size: normal normal bold 16px/24px Heebo;
+    font: normal normal bold 16px/24px Heebo;
     color: #0EE1DA;
+}
+
+
+@media (max-width: 500px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(10, 1fr);
+        grid-template-areas:
+            "box box"
+            "beach cow"
+            "farm island"
+            "isolation monkey"
+            "view oldman"
+            "form form"
+            "form form"
+            "sea sunset"
+            "temple train"
+            "trees Ladies"
+        ;
+    }
+
+    .container .box {
+        grid-area: box;
+        width: var(--width);
+    }
+
+    img .beach {
+        grid-area: beach;
+        width: var(--width);
+    }
+
+    img .cow {
+        grid-area: cow;
+        width: var(--width);
+    }
+
+    img .farm {
+        grid-area: farm;
+        width: var(--width);
+    }
+
+    img .island {
+        grid-area: island;
+        width: var(--width);
+    }
+
+    img .isolation {
+        grid-area: isolation;
+        width: var(--width);
+    }
+
+    img .monkey {
+        grid-area: monkey;
+        width: var(--width);
+    }
+
+    img .view {
+        grid-area: view;
+        width: var(--width);
+    }
+
+    img .oldman {
+        grid-area: oldman;
+        width: var(--width);
+    }
+
+    img .sea {
+        grid-area: sea;
+        width: var(--width);
+    }
+
+    img .sunset {
+        grid-area: sunset;
+        width: var(--width);
+    }
+
+    img .temple {
+        grid-area: temple;
+        width: var(--width);
+    }
+
+    img .train {
+        grid-area: train;
+        width: var(--width);
+    }
+
+    img .trees {
+        grid-area: trees;
+        width: var(--width);
+    }
+
+    img .Ladies {
+        grid-area: Ladies;
+        width: var(--width);
+    }
+
+    .container .form {
+        grid-area: form;
+        width: var(--width);
+    }
 }

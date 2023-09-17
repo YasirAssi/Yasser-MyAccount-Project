@@ -219,17 +219,13 @@ footer img {
   height: 31.3vh;
 }
 
-form {
+#contactUs form {
   display: flex;
   flex-direction: column;
   align-items: left;
   justify-content: left;
-  padding: 20px;
-  margin: 40px;
-  height: 399px;
-  width: 548px;
 }
-form input[type=text] {
+#contactUs form input[type=text] {
   padding: 10px;
   margin: 5px 0;
   font-size: 1em;
@@ -237,16 +233,16 @@ form input[type=text] {
   height: 6vh;
   width: 28.5vw;
 }
-form input[id=Message] {
-  height: 200px;
+#contactUs form input[id=Message] {
+  height: 300px;
 }
-form input[type=submit] {
+#contactUs form input[type=submit] {
   width: 166px;
   height: 50px;
   background-color: var(--bgc);
   border-radius: 25px;
 }
-form label {
+#contactUs form label {
   font-size: 1em;
   color: #fff;
   text-align: left;

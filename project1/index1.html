@@ -4,11 +4,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Here & Now</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Satisfy&family=Varela+Round&display=swap');
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #F9F9F9;
+        }
+
+        section {
+            background-image: linear-gradient(to bottom, #281EFF, #2DFF8C);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            width: 100vw;
+        }
+
+        h1,
+        h2,
+        p,
+        .form {
+            color: #fff;
+            text-align: center;
+            line-height: 0.1;
+            margin: 10px;
+        }
+
+        section h1 {
+            font: normal normal normal 160px/231px Satisfy;
+        }
+
+        section h2 {
+            font: normal normal normal 32px/38px Varela Round;
+        }
+
+        section h2 p {
+            font: normal normal normal 16px/20px Varela Round;
+        }
+
+        section .form {
+            width: 100%;
+        }
+
+        .form input[type="text"] {
+
+            font-size: 1em;
+            color: #3A3A3A;
+            width: 25%;
+            height: 50px;
+            background: #F6F6F624;
+            border: 2px solid #FFFFFF;
+        }
+
+        .form input[type="submit"] {
+            width: 11%;
+            height: 50px;
+            background-color: #fff;
+            cursor: pointer;
+        }
+
+        .form label {
+            font: normal normal normal 16px/20px Varela Round;
+        }
+    </style>
 </head>
 
 <body>
-
+    <section>
+        <h1> Here & Now</h1>
+        <h2>
+            We are glad to invite you to enjoy a various types of gifts
+            <p>
+                Enjoying a variety of gifts can be a wonderful experience. Whether it's for a special occasion or
+                just to spread joy,
+                gifts can bring happiness to both the giver and the recipient.
+            </p>
+        </h2>
+        <div class="form">
+            <form action="">
+                <label for="Full_Name"> Full Name:</label>
+                <input type="text" id="Full_Name" required>
+                <label for="E-mail">E-mail:</label>
+                <input type="text" id="E-mail" required>
+                <input type="submit" value="send">
+            </form>
+        </div>
+    </section>
 </body>
 
 </html>
