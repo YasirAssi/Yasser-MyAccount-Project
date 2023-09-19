@@ -42,6 +42,11 @@ a {
   height: 30px;
 }
 
+@media (max-width: 800px) {
+  .up {
+    left: 75%;
+  }
+}
 .navHeader {
   width: 100%;
   height: 80px;

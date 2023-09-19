@@ -52,3 +52,9 @@ a {
     width: 30px;
     height: 30px;
 }
+
+@media (max-width: 800px) {
+    .up {
+        left: 75%;
+    }
+}
