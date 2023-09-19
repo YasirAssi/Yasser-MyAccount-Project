@@ -201,3 +201,17 @@ ul li a {
     align-items: center;
     padding: 20px;
 }
+
+.up {
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    left: 90%;
+    bottom: 3%;
+    z-index: 999;
+}
+
+.up:hover {
+    width: 30px;
+    height: 30px;
+}
