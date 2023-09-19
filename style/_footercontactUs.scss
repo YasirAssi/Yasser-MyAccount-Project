@@ -1,12 +1,12 @@
 footer {
     display: flex;
-    flex-direction: flex-end;
+    // flex-direction: flex-end;
     width: $width;
     height: 960px;
     background-color: var(--colo);
     background-repeat: no-repeat;
     background-position: top right;
-    margin: 0 0;
+    margin: 0;
 
     h3 {
         width: 200px;
@@ -17,9 +17,9 @@ footer {
         font-size: 2.25em;
     }
 
-    img {
-        width: 21vw;
-        height: 31.3vh;
+    #envelope img {
+        width: 30vw;
+        height: 50vh;
     }
 }
 
@@ -39,8 +39,10 @@ footer {
         width: 28.5vw;
     }
 
-    input[ id="Message"] {
-        height: 300px;
+    textarea {
+        width: 28.5vw;
+        height: 180px;
+        resize: none;
     }
 
     input[type="submit"] {
@@ -55,5 +57,6 @@ footer {
         color: #fff;
         text-align: left;
         opacity: 1;
+        display: block;
     }
 }

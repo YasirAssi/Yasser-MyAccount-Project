@@ -117,6 +117,7 @@ img .Ladies {
     align-items: center;
     justify-content: center;
     background-color: #8E097C;
+    padding: 20px;
 }
 
 
@@ -144,8 +145,11 @@ img .Ladies {
     border-bottom: 2px solid #1fc0e1;
 }
 
-.form input[ id="Experience"] {
-    height: 200px;
+.form textarea {
+    width: 28.5vw;
+    height: 180px;
+    resize: none;
+    border-bottom: 2px solid #1fc0e1;
 }
 
 .form input[type="submit"] {
@@ -153,11 +157,13 @@ img .Ladies {
     height: 6vh;
     background-color: #1fc0e1;
     cursor: pointer;
+    display: block;
 }
 
 .form label {
     font: normal normal bold 16px/24px Heebo;
     color: #0EE1DA;
+    display: block;
 }
 
 
