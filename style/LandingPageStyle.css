@@ -140,7 +140,6 @@ ul li a {
 
 .text-container>p {
     font: normal normal medium 20px/30px Heebo;
-    /* text-align: center; */
 }
 
 .btn1 {
@@ -214,4 +213,10 @@ ul li a {
 .up:hover {
     width: 30px;
     height: 30px;
+}
+
+@media (max-width: 800px) {
+    .up {
+        left: 75%;
+    }
 }
