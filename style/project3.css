@@ -88,6 +88,12 @@ img .Ladies {
     grid-area: Ladies;
 }
 
+img:hover {
+    transform: rotate(30deg) scale(100%);
+    cursor: grab;
+    transition: all 1.5s ease-in-out;
+}
+
 .container .form {
     grid-area: form;
 }
