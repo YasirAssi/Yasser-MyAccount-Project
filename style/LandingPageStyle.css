@@ -10,6 +10,10 @@
     --width: 100%;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 a {
     text-decoration: none;
     cursor: pointer;
@@ -94,28 +98,8 @@ ul li a {
     display: none;
 }
 
-@media (max-width: 800px) {
 
-    ul li {
-        flex-direction: column;
-        align-items: flex-start;
-        display: none;
-    }
 
-    .navHeader {
-        display: none;
-    }
-
-    #unicode {
-        display: block;
-        position: fixed;
-
-    }
-
-    #unicode:hover~ul {
-        display: block;
-    }
-}
 
 #header-container {
     background-image: linear-gradient(to bottom, rgba(101, 163, 235, 0.5), rgba(255, 255, 255, 0.5)), url(../tigerImages/colorSpectrum.jpg);
@@ -216,6 +200,27 @@ ul li a {
 }
 
 @media (max-width: 800px) {
+
+    ul li {
+        flex-direction: column;
+        align-items: flex-start;
+        display: none;
+    }
+
+    .navHeader {
+        display: none;
+    }
+
+    #unicode {
+        display: block;
+        position: fixed;
+
+    }
+
+    #unicode:hover~ul {
+        display: block;
+    }
+
     .up {
         left: 75%;
     }
