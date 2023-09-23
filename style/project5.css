@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+:root {
+    --width: 50%;
+}
+
 header {
     background-color: #0EE1E1;
     width: 100%;
@@ -41,6 +45,9 @@ header .circle1 {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: absolute;
+    top: 10px;
+    right: 10px;
 }
 
 .sections {
@@ -118,7 +125,7 @@ p {
 .container1 form {
     width: 100%;
     height: 100%;
-    padding: 35px;
+    padding: 30px;
 }
 
 form h3 {
@@ -141,8 +148,8 @@ form input[type="text"] {
     margin: 5px 0;
     font-size: 1em;
     color: #77849c;
-    height: 6vh;
-    width: 28.5vw;
+    height: 51px;
+    width: var(--width);
     border: none;
     border-bottom: 3px solid #0EE1E1;
     background-color: #a9abae;
@@ -150,7 +157,7 @@ form input[type="text"] {
 }
 
 form textarea {
-    width: 28.5vw;
+    width: var(--width);
     height: 180px;
     resize: none;
     border: 2px solid #1fc0e1;
@@ -159,8 +166,8 @@ form textarea {
 }
 
 form input[type="submit"] {
-    width: 28.5vw;
-    height: 6vh;
+    width: var(--width);
+    height: 51px;
     background-color: #0EE1E1;
     cursor: pointer;
     display: block;
@@ -225,10 +232,15 @@ footer {
         display: block;
     }
 
+    form h3 {
+        text-align: center;
+    }
+
     .container1 form {
         width: 100%;
         height: 100%;
-
+        text-align: center;
+        padding: 50px;
     }
 
     footer .circle>img {
