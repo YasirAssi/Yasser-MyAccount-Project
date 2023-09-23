@@ -114,7 +114,7 @@ p {
 .container2>img {
     width: 100%;
     height: 100%;
-    padding: 25px;
+    padding: 40px;
 
 }
 
@@ -125,7 +125,7 @@ p {
 .container1 form {
     width: 100%;
     height: 100%;
-    padding: 30px;
+    padding: 13px;
 }
 
 form h3 {
@@ -160,7 +160,7 @@ form textarea {
     width: var(--width);
     height: 180px;
     resize: none;
-    border: 2px solid #1fc0e1;
+    border-bottom: 2px solid #0EE1E1;
     display: block;
     background-color: #a9abae;
 }
@@ -182,14 +182,12 @@ form label {
     display: block;
 }
 
-
 footer {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
-
 
 .circle {
     background-color: #0EE1E1;
@@ -241,6 +239,17 @@ footer {
         height: 100%;
         text-align: center;
         padding: 50px;
+    }
+
+    form input[type="submit"],
+    form input[type="text"],
+    form textarea {
+        width: 100%;
+        background-color: #fff;
+    }
+
+    form label {
+        text-align: left;
     }
 
     footer .circle>img {
