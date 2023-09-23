@@ -184,7 +184,7 @@ ul li a {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 700px;
+  height: 750px;
   background-color: rgba(245, 200, 238, 0.6);
 }
 #aboutMe figcaption {
@@ -214,7 +214,7 @@ ul li a {
 
 #project {
   width: 100%;
-  height: 2000px;
+  height: 2050px;
   background: #aba9a9 0% 0% no-repeat padding-box;
   padding: 80px;
 }
@@ -235,6 +235,10 @@ ul li a {
   background-color: var(--bgc);
   width: 250px;
   height: 30px;
+}
+
+:root {
+  --formwidth: 90%;
 }
 
 footer {
@@ -261,11 +265,9 @@ footer #envelope img {
 }
 
 #contactUs form {
-  display: flex;
-  flex-direction: column;
-  align-items: left;
-  justify-content: left;
-  margin: 50px;
+  display: block;
+  margin-left: 200px;
+  width: 50%;
 }
 #contactUs form input[type=text] {
   padding: 10px;
@@ -273,12 +275,14 @@ footer #envelope img {
   font-size: 1em;
   color: var(--colo);
   height: 6vh;
-  width: 28.5vw;
+  width: var(--formwidth);
+  border-bottom: 2px solid var(--bgc);
 }
 #contactUs form textarea {
-  width: 28.5vw;
+  width: var(--formwidth);
   height: 180px;
   resize: none;
+  border-bottom: 2px solid var(--bgc);
 }
 #contactUs form input[type=submit] {
   width: 166px;
@@ -294,6 +298,22 @@ footer #envelope img {
   display: block;
 }
 
+@media (max-width: 550px) {
+  footer {
+    flex-direction: column;
+  }
+  #contactUs form,
+  #contactUs form h3 {
+    margin-left: 5px;
+    text-align: center;
+    width: 100%;
+  }
+  input[type=text],
+  input[type=submit],
+  textarea {
+    width: var(--formwidth);
+  }
+}
 .contactMethods {
   display: flex;
   justify-content: space-evenly;

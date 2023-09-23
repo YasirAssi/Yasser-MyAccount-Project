@@ -1,3 +1,7 @@
+:root {
+    --formwidth: 90%;
+}
+
 footer {
     display: flex;
     flex-wrap: wrap;
@@ -24,11 +28,9 @@ footer {
 }
 
 #contactUs form {
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    justify-content: left;
-    margin: 50px;
+    display: block;
+    margin-left: 200px;
+    width: 50%;
 
     input[type="text"] {
         padding: 10px;
@@ -36,13 +38,15 @@ footer {
         font-size: 1em;
         color: var(--colo);
         height: 6vh;
-        width: 28.5vw;
+        width: var(--formwidth);
+        border-bottom: 2px solid var(--bgc);
     }
 
     textarea {
-        width: 28.5vw;
+        width: var(--formwidth);
         height: 180px;
         resize: none;
+        border-bottom: 2px solid var(--bgc);
     }
 
     input[type="submit"] {
@@ -58,5 +62,24 @@ footer {
         text-align: left;
         opacity: 1;
         display: block;
+    }
+}
+
+@media (max-width:550px) {
+    footer {
+        flex-direction: column;
+    }
+
+    #contactUs form,
+    #contactUs form h3 {
+        margin-left: 5px;
+        text-align: center;
+        width: 100%;
+    }
+
+    input[type="text"],
+    input[type="submit"],
+    textarea {
+        width: var(--formwidth);
     }
 }
