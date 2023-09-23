@@ -3,18 +3,17 @@
     justify-content: center;
     align-items: center;
     width: $width;
-    height: 720px;
+    height: 700px;
     background-color: rgba(245, 200, 238, 0.6);
 
     figcaption {
         font: normal normal normal 20px/29px Heebo;
     }
 
-    img {
-        width: 140px;
-        height: 140px;
+    .aboutMeimg {
+        width: 20%;
+        height: 200px;
         border-radius: 50%;
-
     }
 
     figure {
