@@ -76,7 +76,7 @@ ul li a {
     display: none;
 }
 
-@media (max-width:800px) {
+@media (max-width:550px) {
     ul li {
         flex-direction: column;
         align-items: flex-start;
@@ -87,42 +87,19 @@ ul li a {
         display: block;
         z-index: 999;
     }
+
+    .navHeader {
+        width: $width;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navHeader {
+        display: none;
+    }
+
+    header .unicode:hover~.navHeader {
+        display: block;
+
+    }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//     .navHeader {
-//         width: $width;
-//         display: flex;
-//         flex-direction: column;
-//     }
-
-//     .navHeader {
-//         display: none;
-//     }
-
-//     .unicode {
-//         display: block;
-//         position: fixed;
-//         z-index: 999;
-//     }
-
-//     header .unicode:hover~.navHeader {
-//         display: block;
-
-//     }
-// }
