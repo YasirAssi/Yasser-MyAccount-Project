@@ -173,7 +173,6 @@ ul li a {
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
-  background-color: rgba(248, 230, 246, 0.6);
 }
 .techUsed img {
   height: 100px;
