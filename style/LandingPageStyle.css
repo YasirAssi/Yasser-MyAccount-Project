@@ -133,6 +133,10 @@ ul li a {
     margin: 19px;
 }
 
+.buttons {
+    display: flex;
+}
+
 .techUsed {
     height: 146px;
     width: var(--width);
