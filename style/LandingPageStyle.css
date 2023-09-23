@@ -114,8 +114,8 @@ ul li a {
     width: 55%;
 }
 
-#header-container>h1 {
-    font: normal normal 900 80px/118px Heebo;
+#header-container h1 {
+    font: normal normal 900 80px/110px Heebo;
 }
 
 .text-container>p {
@@ -135,6 +135,7 @@ ul li a {
 
 .buttons {
     display: flex;
+    margin-top: 40px;
 }
 
 .techUsed {

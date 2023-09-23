@@ -123,15 +123,21 @@ ul li a {
   display: none;
 }
 
-@media (max-width: 800px) {
-  ul li {
-    flex-direction: column;
-    align-items: flex-start;
-    display: none;
-  }
+@media (max-width: 550px) {
   #unicode {
     display: block;
     z-index: 999;
+  }
+  .navHeader {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .navHeader {
+    display: none;
+  }
+  header .unicode:hover ~ .navHeader {
+    display: block;
   }
 }
 #header-container {
@@ -151,7 +157,7 @@ ul li a {
   width: 55%;
 }
 
-#header-container > h1 {
+#header-container h1 {
   font: normal normal 900 80px/118px Heebo;
 }
 
@@ -171,7 +177,7 @@ ul li a {
 }
 .techUsed img {
   height: 100px;
-  width: 100px;
+  width: 10%;
 }
 
 #aboutMe {
