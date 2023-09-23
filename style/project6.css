@@ -74,7 +74,7 @@
         display: block;
     }
 
-    @media (max-width:800px) {
+    @media (max-width:550px) {
         .container {
             display: block;
         }

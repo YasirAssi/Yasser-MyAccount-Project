@@ -201,7 +201,7 @@ footer {
     height: 19px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 550px) {
 
     header .circle1,
     .circle1>img {
