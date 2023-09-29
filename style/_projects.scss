@@ -5,13 +5,11 @@
     margin: 0;
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
 
 
     p {
-        display: flex;
-        justify-content: center;
-        align-items: center;
         text-align: center;
         font: normal normal normal 20px/29px Heebo;
         color: var(--colo);
@@ -27,6 +25,10 @@
 @media (max-width: 550px) {
     #project {
         height: 2050px;
-        padding-left: 25%;
+
+        .row {
+            padding-left: 20%;
+        }
+
     }
 }

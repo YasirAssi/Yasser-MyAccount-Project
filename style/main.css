@@ -220,12 +220,10 @@ ul li a {
   margin: 0;
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-direction: column;
 }
 #project p {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   text-align: center;
   font: normal normal normal 20px/29px Heebo;
   color: var(--colo);
@@ -244,7 +242,9 @@ ul li a {
 @media (max-width: 550px) {
   #project {
     height: 2050px;
-    padding-left: 25%;
+  }
+  #project .row {
+    padding-left: 20%;
   }
 }
 :root {
