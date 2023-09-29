@@ -11,9 +11,6 @@
 
 $width: 100%;
 
-body {
-    width: $width;
-}
 
 h2 {
     font: normal normal 900 35px/52px Heebo;
@@ -58,6 +55,7 @@ a {
 }
 
 @media (max-width: 550px) {
+
 
     .up {
         left: 75%;
