@@ -262,7 +262,6 @@ footer {
   height: 960px;
   background-color: var(--colo);
   background-repeat: no-repeat;
-  background-position: top right;
   margin: 0;
 }
 footer h3 {
@@ -278,12 +277,12 @@ footer #envelope img {
   height: 50vh;
 }
 
-#contactUs form {
+footer form {
   display: block;
   margin-left: 200px;
   width: 50%;
 }
-#contactUs form input[type=text] {
+footer form input[type=text] {
   padding: 10px;
   margin: 5px 0;
   font-size: 1em;
@@ -292,19 +291,19 @@ footer #envelope img {
   width: var(--formwidth);
   border-bottom: 2px solid var(--bgc);
 }
-#contactUs form textarea {
+footer form textarea {
   width: var(--formwidth);
   height: 180px;
   resize: none;
   border-bottom: 2px solid var(--bgc);
 }
-#contactUs form input[type=submit] {
+footer form input[type=submit] {
   width: 166px;
   height: 50px;
   background-color: var(--bgc);
   border-radius: 25px;
 }
-#contactUs form label {
+footer form label {
   font-size: 1em;
   color: #fff;
   text-align: left;
@@ -316,8 +315,8 @@ footer #envelope img {
   footer {
     flex-direction: column;
   }
-  #contactUs form,
-  #contactUs form h3 {
+  footer form,
+  footer form h3 {
     margin-left: 5px;
     text-align: center;
     width: 100%;
@@ -340,8 +339,8 @@ footer #envelope img {
   padding: 10px;
 }
 .contactMethods img {
-  width: 41px;
-  height: 41px;
+  width: 20% px;
+  height: 20%;
 }
 
 .copyRights {
@@ -352,7 +351,6 @@ footer #envelope img {
   width: 100%;
   height: 51px;
   padding: 10px;
-  justify-content: flex-start;
   justify-content: space-between;
   border: 1px solid var(--bgc);
 }/*# sourceMappingURL=main.css.map */
