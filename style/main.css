@@ -295,7 +295,7 @@ footer form textarea {
   border-bottom: 2px solid var(--bgc);
 }
 footer form input[type=submit] {
-  width: 166px;
+  width: var(--formwidth);
   height: 50px;
   background-color: var(--bgc);
   border-radius: 25px;
@@ -317,11 +317,6 @@ footer form label {
     margin-left: 5px;
     text-align: center;
     width: 100%;
-  }
-  input[type=text],
-  input[type=submit],
-  textarea {
-    width: var(--formwidth);
   }
 }
 .contactMethods {
