@@ -9,6 +9,10 @@
   --bgc: #1fc0e1;
 }
 
+body {
+  width: 100%;
+}
+
 h2 {
   font: normal normal 900 35px/52px Heebo;
   display: flex;
@@ -215,6 +219,7 @@ ul li a {
   height: 2050px;
   background: #aba9a9 0% 0% no-repeat padding-box;
   padding: 80px;
+  margin-bottom: 30px;
 }
 #project p {
   display: flex;
