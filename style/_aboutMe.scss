@@ -1,25 +1,26 @@
 #aboutMe {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: first baseline;
     width: $width;
     height: 750px;
     background-color: rgba(245, 200, 238, 0.6);
+    padding: 50px;
 
     figcaption {
         font: normal normal normal 20px/29px Heebo;
-    }
-
-    .aboutMeimg {
-        width: 20%;
-        height: 200px;
-        border-radius: 50%;
     }
 
     figure {
         width: 798px;
         height: 232px;
         text-align: center;
+
+        .aboutMeimg {
+            width: 20%;
+            height: 200px;
+            border-radius: 50%;
+        }
     }
 }
 
