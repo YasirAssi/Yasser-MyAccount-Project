@@ -6,7 +6,7 @@ footer {
     display: flex;
     flex-wrap: wrap;
     width: $width;
-    height: 960px;
+    height: 900px;
     background-color: var(--colo);
     background-repeat: no-repeat;
     margin: 0;
@@ -30,6 +30,7 @@ footer form {
     display: block;
     margin-left: 200px;
     width: 50%;
+    padding: 30px;
 
     input[type="text"] {
         padding: 10px;
