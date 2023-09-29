@@ -1,8 +1,12 @@
 #project {
     width: $width;
-    height: 2050px;
+    height: 1200px;
     background: #aba9a9 0% 0% no-repeat padding-box;
     padding: 10px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 
 
     p {
@@ -19,4 +23,10 @@
     @include bTn;
     width: 250px;
     height: 30px;
+}
+
+@media (max-width: 550px) {
+    #project {
+        height: 2050px;
+    }
 }
