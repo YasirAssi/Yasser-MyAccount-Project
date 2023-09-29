@@ -1,6 +1,6 @@
 .navHeader {
     width: $width;
-    height: 80px;
+    height: 60px;
     position: fixed;
     top: 0;
     border: 1px solid #000;
@@ -11,15 +11,16 @@
     align-items: center;
 }
 
-header #unicode {
+#hamburger {
     font-size: 1.2em;
     color: black;
     font-weight: bold;
     padding: 5px;
     cursor: pointer;
+    display: none;
 }
 
-nav ul {
+.navHeader ul {
     list-style-type: none;
     display: flex;
     flex-grow: 0.9;
@@ -27,7 +28,7 @@ nav ul {
 
 }
 
-nav ul li a {
+.navHeader ul li a {
     text-decoration: none;
     width: 150px;
     color: #000;
@@ -36,21 +37,17 @@ nav ul li a {
     font-size: 1.2em;
 }
 
-nav ul li a:hover {
+.navHeader ul li a:hover {
     font-weight: bolder;
 }
 
-.navIcon {
-    width: 46px;
-    height: 46px;
+.navHeader img {
+    width: 8%;
+    height: 50%;
 }
 
-.navPh {
-    width: 79px;
-    height: 35px;
-}
 
-#unicode:hover+ul {
+#hamburger:hover+ul {
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -59,14 +56,14 @@ nav ul li a:hover {
     left: 0;
 }
 
-#unicode:hover+ul li {
+#hamburger:hover+ul li {
     margin: 0;
     padding: 10px 20px;
     width: 100%;
     text-align: center;
 }
 
-#unicode:hover+ul a {
+#hamburger:hover+ul a {
     color: white;
     text-decoration: none;
 }
@@ -78,22 +75,23 @@ ul li a {
 
 @media (max-width:550px) {
 
-    #unicode {
+    #hamburger {
         display: block;
         z-index: 999;
+        width: $width;
     }
 
     .navHeader {
         width: $width;
         display: flex;
-        flex-direction: column;
+        height: 30px;
     }
 
-    .navHeader {
+    .navHeader ul {
         display: none;
     }
 
-    header .unicode:hover~.navHeader {
+    #hamburger:hover {
         display: block;
 
     }
