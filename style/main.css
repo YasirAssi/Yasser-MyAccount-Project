@@ -310,6 +310,7 @@ footer form label {
 @media (max-width: 550px) {
   footer {
     flex-direction: column;
+    align-items: center;
   }
   footer form,
   footer form h3 {

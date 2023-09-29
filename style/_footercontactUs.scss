@@ -71,6 +71,8 @@ footer {
 @media (max-width:550px) {
     footer {
         flex-direction: column;
+        // justify-content: center;
+        align-items: center;
 
         form,
         form h3 {
