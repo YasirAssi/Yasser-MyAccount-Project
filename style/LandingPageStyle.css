@@ -23,7 +23,7 @@ a {
 
 .navHeader {
     width: var(--width);
-    height: 80px;
+    height: 50px;
     position: fixed;
     top: 0;
     border: 1px solid #000;
@@ -99,6 +99,8 @@ ul li a {
     justify-content: center;
     align-items: center;
     width: var(--width);
+    margin-top: 30px;
+    margin-bottom: 50px;
 }
 
 .text-container {
@@ -117,21 +119,23 @@ ul li a {
     font: normal normal medium 20px/30px Heebo;
 }
 
+.buttons {
+    display: flex;
+    margin-top: 15px;
+}
+
 .btn1 {
     border-radius: 25px;
     text-decoration: none;
     opacity: 1;
     background-color: var(--bgc);
     color: var(--colo);
-    width: 260px;
+    width: 35vw;
     height: 41px;
-    margin: 19px;
+    margin: 10px;
 }
 
-.buttons {
-    display: flex;
-    margin-top: 40px;
-}
+
 
 .techUsed {
     height: 146px;
@@ -207,7 +211,8 @@ ul li a {
 
     .navHeader {
         width: var(--width);
-        display: flex;
+        justify-content: flex-end;
+        height: 30px;
     }
 
     #hamburger:hover {
