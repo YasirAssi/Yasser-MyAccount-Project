@@ -113,6 +113,7 @@ ul li a {
 
 #header-container h1 {
     font: normal normal 900 50px/80px Heebo;
+    word-spacing: 0;
 }
 
 .text-container>p {
