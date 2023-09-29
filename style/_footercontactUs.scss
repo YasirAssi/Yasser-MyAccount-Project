@@ -71,12 +71,12 @@ footer {
 @media (max-width:550px) {
     footer {
         flex-direction: column;
-    }
 
-    footer form,
-    footer form h3 {
-        margin-left: 1px;
-        text-align: center;
-        width: $width;
+        form,
+        form h3 {
+            margin-left: 1px;
+            text-align: center;
+            width: $width;
+        }
     }
 }
