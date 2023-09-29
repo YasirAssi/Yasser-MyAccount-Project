@@ -245,7 +245,8 @@ ul li a {
   #project {
     height: 2050px;
   }
-  #project .container .row {
+  #project .container,
+  #project .row {
     justify-content: center;
     align-items: center;
   }

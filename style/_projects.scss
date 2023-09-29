@@ -28,7 +28,8 @@
     #project {
         height: 2050px;
 
-        .container .row {
+        .container,
+        .row {
             justify-content: center;
             align-items: center;
         }
