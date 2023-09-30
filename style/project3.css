@@ -25,7 +25,7 @@ body {
         "sea sunset form form"
         "temple train form form"
         "trees Ladies form form";
-    gap: 10px;
+    gap: 5px;
 }
 
 .container .box {
@@ -89,13 +89,18 @@ img .Ladies {
 }
 
 img:hover {
-    transform: rotate(30deg) scale(100%);
+    transform: translate(50px, 80px);
     cursor: grab;
     transition: all 1.5s ease-in-out;
 }
 
 .container .form {
     grid-area: form;
+}
+
+.container img {
+    width: var(--width);
+    height: var(--width);
 }
 
 .box {
@@ -189,91 +194,93 @@ img:hover {
             "temple train"
             "trees Ladies"
         ;
+        gap: 3px;
     }
 
     .container .box {
         grid-area: box;
-        width: var(--width);
+
     }
 
     img .beach {
         grid-area: beach;
-        width: var(--width);
+
     }
 
     img .cow {
         grid-area: cow;
-        width: var(--width);
+
     }
 
     img .farm {
         grid-area: farm;
-        width: var(--width);
+
     }
 
     img .island {
         grid-area: island;
-        width: var(--width);
+
     }
 
     img .isolation {
         grid-area: isolation;
-        width: var(--width);
+
     }
 
     img .monkey {
         grid-area: monkey;
-        width: var(--width);
+
     }
 
     img .view {
         grid-area: view;
-        width: var(--width);
+
     }
 
     img .oldman {
         grid-area: oldman;
-        width: var(--width);
+
     }
 
     img .sea {
         grid-area: sea;
-        width: var(--width);
+
     }
 
     img .sunset {
         grid-area: sunset;
-        width: var(--width);
+
     }
 
     img .temple {
         grid-area: temple;
-        width: var(--width);
+
     }
 
     img .train {
         grid-area: train;
-        width: var(--width);
+
     }
 
     img .trees {
         grid-area: trees;
-        width: var(--width);
+
     }
 
     img .Ladies {
         grid-area: Ladies;
-        width: var(--width);
+
     }
 
     .container .form {
         grid-area: form;
-        width: var(--width);
+
     }
 
     .form input[type="text"],
     .form input[type="submit"],
     .form textarea {
-        width: 100%;
+        width: var(--width);
     }
+
 }
