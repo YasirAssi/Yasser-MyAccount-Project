@@ -9,5 +9,11 @@
     img {
         height: 100px;
         width: 10%;
+
+        &:hover {
+            transform: rotate(0.5turn);
+            transition: all 1s ease-in-out;
+        }
     }
+
 }
