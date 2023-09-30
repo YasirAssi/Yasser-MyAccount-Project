@@ -313,7 +313,7 @@ footer form label {
 }
 .contactMethods {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
   height: 200.33px;
@@ -323,7 +323,7 @@ footer form label {
   padding: 10px;
 }
 .contactMethods img {
-  width: 30%;
+  width: 25%;
   height: 30%;
 }
 

@@ -1,6 +1,6 @@
 .contactMethods {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
     height: 200.33px;
@@ -10,7 +10,13 @@
     padding: 10px;
 
     img {
-        width: 30%;
+        width: 25%;
         height: 30%;
     }
 }
+
+// @media (max-width: 550px) {
+//     .contactMethods {
+//         justify-content: space-around;
+//     }
+// }
