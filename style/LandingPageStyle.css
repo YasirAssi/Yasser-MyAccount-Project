@@ -183,18 +183,27 @@ ul li a {
     padding: 20px;
 }
 
-.up {
+.scroll-arrow {
     position: fixed;
-    width: 20px;
-    height: 20px;
-    left: 90%;
-    bottom: 3%;
+    bottom: 20px;
+    right: 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
     z-index: 999;
 }
 
-.up:hover {
-    width: 30px;
-    height: 30px;
+.scroll-arrow:hover {
+    opacity: 1;
+}
+
+.scroll-arrow .up {
+    width: 40px;
+    height: auto;
+    cursor: pointer;
+}
+
+.scroll-arrow .up:hover {
+    opacity: 0.7;
 }
 
 @media (max-width: 550px) {
