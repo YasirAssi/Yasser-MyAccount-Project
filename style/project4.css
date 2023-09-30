@@ -36,14 +36,13 @@
 .circle1:hover {
     transform: rotate(30deg);
     cursor: grab;
+    transition: all 1s ease-in-out;
 }
 
 .freecontact {
     width: 27.9%;
     height: 800px;
 }
-
-
 
 .container {
     display: flex;
@@ -176,5 +175,6 @@ footer {
 
     .freecontact:hover {
         transform: scale(1.5);
+        transition: all 1s ease-in-out;
     }
 }

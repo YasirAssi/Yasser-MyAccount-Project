@@ -199,6 +199,13 @@ footer {
     margin: 10px;
 }
 
+.circle:hover,
+.circle1:hover {
+    transform: rotate(30deg);
+    cursor: grab;
+    transition: all 1s ease-in-out;
+}
+
 .bottomcolor {
     background-color: var(--bgc);
     width: 100%;
