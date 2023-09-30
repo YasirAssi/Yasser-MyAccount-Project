@@ -20,6 +20,12 @@
             width: 20%;
             height: 200px;
             border-radius: 50%;
+
+            &:hover {
+                transform: scale(2);
+                transition: all 1.5s ease-in-out;
+                cursor: pointer;
+            }
         }
     }
 }

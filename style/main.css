@@ -193,6 +193,11 @@ ul li a {
   height: 200px;
   border-radius: 50%;
 }
+#aboutMe figure .aboutMeimg:hover {
+  transform: scale(2);
+  transition: all 1.5s ease-in-out;
+  cursor: pointer;
+}
 
 .btn1 {
   border-radius: 25px;
