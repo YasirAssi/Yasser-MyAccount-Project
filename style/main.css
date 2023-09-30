@@ -171,8 +171,8 @@ ul li a {
   width: 10%;
 }
 .techUsed img:hover {
-  transform: rotate(0.5turn);
-  transition: all 1s ease-in-out;
+  transform: rotate(1turn);
+  transition: all 1.5s ease-in-out;
 }
 
 #aboutMe {
