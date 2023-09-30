@@ -13,6 +13,15 @@
         width: 25%;
         height: 30%;
     }
+
+    figcaption {
+
+        &:hover {
+            transform: scale(1.5);
+            transition: all 1s ease-in-out;
+            cursor: pointer;
+        }
+    }
 }
 
 @media (max-width: 550px) {
