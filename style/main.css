@@ -121,6 +121,9 @@ ul li a {
     z-index: 999;
     width: 100%;
   }
+  #hamburger:hover {
+    display: block;
+  }
   .navHeader {
     width: 100%;
     display: flex;
@@ -128,9 +131,6 @@ ul li a {
   }
   .navHeader ul {
     display: none;
-  }
-  #hamburger:hover {
-    display: block;
   }
 }
 #header-container {

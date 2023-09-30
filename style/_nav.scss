@@ -77,6 +77,11 @@ ul li a {
         display: block;
         z-index: 999;
         width: $width;
+
+        &:hover {
+            display: block;
+
+        }
     }
 
     .navHeader {
@@ -89,8 +94,4 @@ ul li a {
         display: none;
     }
 
-    #hamburger:hover {
-        display: block;
-
-    }
 }
