@@ -43,6 +43,8 @@
     height: 800px;
 }
 
+
+
 .container {
     display: flex;
     justify-content: center;
@@ -170,5 +172,9 @@ footer {
 
     footer .circle>img {
         width: 60%;
+    }
+
+    .freecontact:hover {
+        transform: scale(1.5);
     }
 }
