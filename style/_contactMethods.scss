@@ -15,8 +15,8 @@
     }
 }
 
-// @media (max-width: 550px) {
-//     .contactMethods {
-//         justify-content: space-around;
-//     }
-// }
+@media (max-width: 550px) {
+    .contactMethods {
+        justify-content: space-between;
+    }
+}
