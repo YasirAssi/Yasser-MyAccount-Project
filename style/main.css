@@ -329,7 +329,7 @@ footer form label {
 
 @media (max-width: 550px) {
   .contactMethods {
-    height: 600px;
+    height: 400px;
   }
 }
 .copyRights {
