@@ -32,6 +32,12 @@
     align-items: center;
 }
 
+.circle:hover,
+.circle1:hover {
+    transform: rotate(30deg);
+    cursor: grab;
+}
+
 .freecontact {
     width: 27.9%;
     height: 800px;
@@ -120,6 +126,7 @@ footer {
     align-items: center;
     margin: 10px;
 }
+
 
 .bottom {
     width: 54%;
