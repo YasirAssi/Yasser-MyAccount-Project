@@ -9,6 +9,32 @@
     z-index: 999;
     display: flex;
     align-items: center;
+
+    ul {
+        list-style-type: none;
+        display: flex;
+        flex-grow: 0.9;
+        margin-bottom: 0;
+
+    }
+
+    ul li a {
+        text-decoration: none;
+        width: 150px;
+        color: #000;
+        display: block;
+        text-align: center;
+        font-size: 1.2em;
+    }
+
+    ul li a:hover {
+        font-weight: bolder;
+    }
+
+    img {
+        width: 8%;
+        height: 50%;
+    }
 }
 
 #hamburger {
@@ -18,56 +44,28 @@
     padding: 5px;
     cursor: pointer;
     display: none;
+
+    &:hover+ul {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        background-color: #333;
+        top: 100%;
+        left: 0;
+    }
+
+    &:hover+ul li {
+        margin: 0;
+        padding: 10px 20px;
+        width: 100%;
+        text-align: center;
+    }
+
+    &:hover+ul a {
+        color: white;
+        text-decoration: none;
+    }
 }
-
-.navHeader ul {
-    list-style-type: none;
-    display: flex;
-    flex-grow: 0.9;
-    margin-bottom: 0;
-
-}
-
-.navHeader ul li a {
-    text-decoration: none;
-    width: 150px;
-    color: #000;
-    display: block;
-    text-align: center;
-    font-size: 1.2em;
-}
-
-.navHeader ul li a:hover {
-    font-weight: bolder;
-}
-
-.navHeader img {
-    width: 8%;
-    height: 50%;
-}
-
-
-#hamburger:hover+ul {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    background-color: #333;
-    top: 100%;
-    left: 0;
-}
-
-#hamburger:hover+ul li {
-    margin: 0;
-    padding: 10px 20px;
-    width: 100%;
-    text-align: center;
-}
-
-#hamburger:hover+ul a {
-    color: white;
-    text-decoration: none;
-}
-
 
 ul li a {
     display: none;

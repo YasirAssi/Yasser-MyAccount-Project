@@ -5,6 +5,10 @@
     justify-content: center;
     align-items: center;
     width: $width;
+
+    h1 {
+        font: normal normal 900 80px/118px Heebo;
+    }
 }
 
 .text-container {
@@ -13,10 +17,6 @@
     align-items: center;
     flex-direction: column;
     width: 55%;
-}
-
-#header-container h1 {
-    font: normal normal 900 80px/118px Heebo;
 }
 
 .text-container>p {
