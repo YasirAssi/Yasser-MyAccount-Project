@@ -1,0 +1,46 @@
+@media (max-width: 550px) {
+    #hamburger {
+        display: block;
+        z-index: 999;
+        width: $width;
+
+        &:hover {
+            display: block;
+
+        }
+    }
+
+    .navHeader {
+        width: $width;
+        display: flex;
+        height: 30px;
+
+        ul {
+            display: none;
+        }
+    }
+
+    #project {
+        height: 2050px;
+
+        .row {
+            padding-left: 10%;
+        }
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+
+        form,
+        form h3 {
+            margin-left: 1px;
+            text-align: center;
+            width: $width;
+        }
+    }
+
+    .contactMethods {
+        height: 400px;
+    }
+}

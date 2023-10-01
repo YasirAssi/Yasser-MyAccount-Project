@@ -71,27 +71,3 @@
 ul li a {
     display: none;
 }
-
-@media (max-width:550px) {
-
-    #hamburger {
-        display: block;
-        z-index: 999;
-        width: $width;
-
-        &:hover {
-            display: block;
-
-        }
-    }
-
-    .navHeader {
-        width: $width;
-        display: flex;
-        height: 30px;
-
-        ul {
-            display: none;
-        }
-    }
-}
