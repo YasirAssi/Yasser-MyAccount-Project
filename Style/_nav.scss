@@ -10,11 +10,12 @@
     align-items: center;
     overflow: hidden;
 
+
     ul {
         font: normal normal 500 15px/10px Heebo;
         list-style-type: none;
         display: flex;
-        flex-grow: 0.9;
+        flex-grow: 0.99;
         margin-bottom: 0;
         padding-left: 2rem;
 
@@ -35,6 +36,7 @@
 
     img {
         height: 90%;
+        overflow: hidden;
     }
 }
 
@@ -51,7 +53,7 @@
         flex-direction: column;
         position: absolute;
         left: 0;
-        top: 0;
+        top: 30px;
         background-color: #333;
         opacity: 0.5;
     }
