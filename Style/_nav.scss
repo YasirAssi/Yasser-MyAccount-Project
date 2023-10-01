@@ -12,11 +12,12 @@
     overflow: hidden;
 
     ul {
+        font: normal normal 500 15px/10px Heebo;
         list-style-type: none;
         display: flex;
         flex-grow: 0.9;
         margin-bottom: 0;
-
+        padding-left: 2rem;
     }
 
     ul li a {

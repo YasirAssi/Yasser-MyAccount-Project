@@ -8,6 +8,10 @@
     align-items: center;
     flex-direction: column;
 
+    .card {
+        height: 280px;
+        margin: 5px;
+    }
 
     p {
         text-align: center;

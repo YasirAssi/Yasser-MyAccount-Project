@@ -24,11 +24,6 @@ a {
   color: var(--colo);
 }
 
-.card {
-  height: 280px;
-  margin: 5px;
-}
-
 .scroll-arrow {
   position: fixed;
   bottom: 20px;
@@ -68,10 +63,12 @@ a {
   overflow: hidden;
 }
 .navHeader ul {
+  font: normal normal 500 15px/10px Heebo;
   list-style-type: none;
   display: flex;
   flex-grow: 0.9;
   margin-bottom: 0;
+  padding-left: 2rem;
 }
 .navHeader ul li a {
   text-decoration: none;
@@ -146,7 +143,8 @@ ul li a {
   width: 100%;
 }
 #header-container h1 {
-  font: normal normal 900 80px/118px Heebo;
+  font: normal normal 900 50px/80px Heebo;
+  word-spacing: 0;
 }
 
 .text-container {
@@ -229,6 +227,10 @@ ul li a {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+#project .card {
+  height: 280px;
+  margin: 5px;
 }
 #project p {
   text-align: center;
