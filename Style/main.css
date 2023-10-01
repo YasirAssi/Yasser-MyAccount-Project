@@ -340,8 +340,11 @@ footer form label {
   padding: 10px;
 }
 .contactMethods img {
-  width: 25%;
-  height: 30%;
+  max-width: 100%;
+  height: auto;
+}
+.contactMethods figcaption {
+  padding: 10px;
 }
 .contactMethods figcaption:hover {
   transform: scale(1.5);
