@@ -8,7 +8,7 @@
         #hamburger {
             display: block;
             z-index: 999;
-            width: $width;
+            flex-grow: 1;
 
             &:hover {
                 display: block;
