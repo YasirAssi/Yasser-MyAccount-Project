@@ -18,19 +18,20 @@
         flex-grow: 0.9;
         margin-bottom: 0;
         padding-left: 2rem;
-    }
 
-    ul li a {
-        text-decoration: none;
-        width: 150px;
-        color: #000;
-        display: block;
-        text-align: center;
-        font-size: 1.2em;
-    }
 
-    ul li a:hover {
-        font-weight: bolder;
+        li a {
+            text-decoration: none;
+            width: 150px;
+            color: #000;
+            display: block;
+            text-align: center;
+            font-size: 1.2em;
+        }
+
+        li a:hover {
+            font-weight: bolder;
+        }
     }
 
     img {
@@ -51,8 +52,8 @@
         flex-direction: column;
         position: absolute;
         background-color: #333;
-        top: 100%;
-        left: 0;
+        //    top : 5px;
+        //     left: 0;
     }
 
     &:hover+ul li {
@@ -66,8 +67,4 @@
         color: white;
         text-decoration: none;
     }
-}
-
-ul li a {
-    display: none;
 }

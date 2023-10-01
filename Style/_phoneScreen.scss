@@ -1,19 +1,19 @@
 @media (max-width: 550px) {
-    #hamburger {
-        display: block;
-        z-index: 999;
-        width: $width;
-
-        &:hover {
-            display: block;
-
-        }
-    }
 
     .navHeader {
         width: $width;
         display: flex;
         height: 30px;
+
+        #hamburger {
+            display: block;
+            z-index: 999;
+            width: $width;
+
+            &:hover {
+                display: block;
+            }
+        }
 
         ul {
             display: none;
