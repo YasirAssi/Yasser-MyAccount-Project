@@ -18,7 +18,8 @@
 
         .aboutMeimg {
             width: 20%;
-            height: 200px;
+            height: 50%;
+            object-fit: cover;
             border-radius: 50%;
 
             &:hover {
