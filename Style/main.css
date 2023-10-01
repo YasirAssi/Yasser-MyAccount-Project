@@ -319,7 +319,7 @@ footer form label {
   border: 1px solid var(--bgc);
 }
 
-@media (max-width: 550px) {
+@media (max-width: 800px) {
   .navHeader {
     width: 100%;
     display: flex;
