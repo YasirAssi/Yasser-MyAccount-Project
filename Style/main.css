@@ -65,6 +65,7 @@ a {
   z-index: 999;
   display: flex;
   align-items: center;
+  overflow: hidden;
 }
 .navHeader ul {
   list-style-type: none;
@@ -84,8 +85,7 @@ a {
   font-weight: bolder;
 }
 .navHeader img {
-  width: 8%;
-  height: 50%;
+  height: 90%;
 }
 
 #hamburger {
