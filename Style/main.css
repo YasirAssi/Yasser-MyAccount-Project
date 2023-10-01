@@ -335,6 +335,14 @@ footer form label {
   .navHeader ul {
     display: none;
   }
+  #header-container h1 {
+    font: normal normal 900 30px/40px Heebo;
+    word-spacing: 0;
+  }
+  .text-container > p {
+    font: normal normal 500 15px/30px Heebo;
+    text-align: center;
+  }
   #project {
     height: 2050px;
   }
