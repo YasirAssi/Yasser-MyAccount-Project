@@ -26,7 +26,6 @@
         border: 2px solid #707070;
         width: 100vw;
         height: 100vh;
-
     }
 
 
@@ -54,7 +53,6 @@
         border: none;
         border-bottom: 3px solid #020253;
         background-color: #9daece;
-
     }
 
     .form input[type="submit"] {
