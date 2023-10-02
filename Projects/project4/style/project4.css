@@ -69,7 +69,6 @@ form p {
     color: #000;
     text-align: left;
     margin: 5px;
-
 }
 
 form input[type="text"] {
@@ -82,7 +81,6 @@ form input[type="text"] {
     border: none;
     border-bottom: 3px solid var(--bgc);
     background-color: #a9abae;
-
 }
 
 form textarea {
