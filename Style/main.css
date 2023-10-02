@@ -329,7 +329,7 @@ footer form label {
   .navHeader #hamburger {
     display: block;
     z-index: 999;
-    flex-grow: 1;
+    flex-grow: 0.99;
   }
   .navHeader #hamburger:hover {
     display: block;
