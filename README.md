@@ -6,10 +6,13 @@ Welcome to my portfolio project! This project serves as a showcase of my web dev
 The landing pages are meticulously crafted using a combination of HTML, CSS, Bootstrap, and SASS, ensuring a visually appealing and responsive presentation of my work.
 
 # Technologies Used
-HTML: Used for structuring the content and layout of each landing page.
-CSS: Employed to style and design the pages, providing a polished and professional appearance.
-Bootstrap: Used to built the projects gallary in the portfolio.
-SASS (Syntactically Awesome Style Sheets): Streamlined the CSS development process, making it more maintainable and organized.
+-HTML: Used for structuring the content and layout of each landing page.
+
+-CSS: Employed to style and design the pages, providing a polished and professional appearance.
+
+-Bootstrap: Used to built the projects gallary in the portfolio.
+
+-SASS (Syntactically Awesome Style Sheets): Streamlined the CSS development process, making it more maintainable and organized.
 
 # Project Structure
 The project is structured in a user-friendly manner, allowing easy navigation and exploration of each project:
