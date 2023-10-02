@@ -131,7 +131,6 @@ img:hover {
     padding: 20px;
 }
 
-
 .form h3 {
     font: normal normal bold 35px/46px Assistant;
     color: #fff;
@@ -176,7 +175,6 @@ img:hover {
     color: #0EE1DA;
     display: block;
 }
-
 
 @media (max-width: 550px) {
     .container {
