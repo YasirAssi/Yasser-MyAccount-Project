@@ -199,82 +199,66 @@ img:hover {
 
     .container .box {
         grid-area: box;
-
     }
 
     img .beach {
         grid-area: beach;
-
     }
 
     img .cow {
         grid-area: cow;
-
     }
 
     img .farm {
         grid-area: farm;
-
     }
 
     img .island {
         grid-area: island;
-
     }
 
     img .isolation {
         grid-area: isolation;
-
     }
 
     img .monkey {
         grid-area: monkey;
-
     }
 
     img .view {
         grid-area: view;
-
     }
 
     img .oldman {
         grid-area: oldman;
-
     }
 
     img .sea {
         grid-area: sea;
-
     }
 
     img .sunset {
         grid-area: sunset;
-
     }
 
     img .temple {
         grid-area: temple;
-
     }
 
     img .train {
         grid-area: train;
-
     }
 
     img .trees {
         grid-area: trees;
-
     }
 
     img .Ladies {
         grid-area: Ladies;
-
     }
 
     .container .form {
         grid-area: form;
-
     }
 
     .form input[type="text"],
@@ -282,5 +266,4 @@ img:hover {
     .form textarea {
         width: var(--width);
     }
-
 }
