@@ -3,7 +3,13 @@
 
 //incase of export default
 import Action from "./classes/action.js";
-let salary = new Action("income", "November Salary", 1000);
+import ActionManager from "./classes/ActionManager.js";
+
+let salary = new Action("income", "November Salary", 10000);
 console.log(salary);
 let supermarket= new Action("expense", "Supermarket", 600);
 console.log(supermarket);
+
+let manager = new ActionManager();
+manager.addAction(salary);
+manager.deleteAction(supermarket);
