@@ -9,17 +9,23 @@ export default class ActionManager {
     }
     deleteAction(actionId){
         //find the relevent index 
-        let deleteAction1 =  this.actions.findIndex((action) => action.id == actionId);
+        let deleteIndex =  this.actions.findIndex((action) => action.id == actionId);
         //delete with splice
-        this.actions.splice(deleteAction1, 1);
+        this.actions.splice(deleteIndex, 1);
         this.calcBalance();
     }
-    updateAction(){}
+    updateAction(actionId,newAmount){
+        let updateAction = this.actions.findIndex((action) => action.id ==actionId);
+        this.actions[updateAction].amount = this.actions[updateAction].description == 'income' ? newAmount : -newAmount;
+        this.calcBalance();
+    }
     calcBalance(){
-        // to do also with reduce
-        for(let action of this.actions){
-            this.balance += action.amount;
-        }
+        this.balance = 0;
+        // to do also with reduce: // 
+        this.balance = this.actions.reduce((amount, action) => amount + action.amount, 0);
+        // for(let action of this.actions){
+        //     this.balance += action.amount;
+        // }
         document.getElementById('balance').innerHTML = `Balance: ${this.balance}`;
     }
 }

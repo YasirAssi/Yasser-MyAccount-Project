@@ -13,45 +13,48 @@
     <div class="container">
         <h1 class="display-1 text-primary text-center">MY<i class="fa-solid fa-chart-pie text-secondary"></i>ACCOUNT</h1>
         <div class="alert alert-secondary text-center" role="alert" id="balance">Balance:</div>
-    <div class="row">
-        <div class="col-md-4">
-            <select class="form-select m-2" aria-label="defailt select example">
-                <option value="income">Income</option>
-                <option value="expense">Expense</option>
-            </select>
-            <!-- <input class="form-control m-2 form-control-lg" type="text" placeholder="Description" aria-label=".form-control-lg example">
-            <input class="form-control m-2 form-control-lg" type="number" placeholder="Amount" aria-label=".form-control-lg example"> -->
-            <div class="form-floating my-3">
-                <input type="text"
-                class="form-control" 
-                id="description" 
-                placeholder="Description">
-                <label for="description">Description</label>
-            </div>
-            <div class="form-floating">
-                <input type="number" 
-                class="form-control" 
-                id="ammount" 
-                placeholder="Ammount here">
-                <label for="ammount">Ammount</label>
-            </div>
-                <button type="button" class="btn btn-primary mt-3 w-100">Add</button>
-            </div>
+        <div class="row">
+            <div class="col-md-4">
+                <select 
+                class="form-select m-2" 
+                aria-label="defailt select example" 
+                id="type">
+                    <option value="income">Income</option>
+                    <option value="expense">Expense</option>
+                </select>
+        <!-- <input class="form-control m-2 form-control-lg" type="text" placeholder="Description" aria-label=".form-control-lg example">
+        <input class="form-control m-2 form-control-lg" type="number" placeholder="Amount" aria-label=".form-control-lg example"> -->
+        <div class="form-floating my-3">
+            <input type="text"
+            class="form-control" 
+            id="description" 
+            placeholder="Description">
+            <label for="description">Description</label>
+        </div>
+        <div class="form-floating">
+            <input type="number" 
+            class="form-control" 
+            id="amount" 
+            placeholder="Amount here">
+            <label for="amount">Amount</label>
+        </div>
+            <button type="button" class="btn btn-primary mt-3 w-100" onclick="addActionToManager ()">Add</button>
+        </div>
         <div class="col-md-8">
             <table class="table">
-        <thead>
-            <tr>
-                <th class="col-md-5">Description</th>
-                <th class="col-md-5">Ammount</th>
-                <th class="col-md-1"></th>
-                <th class="col-md-1"></th>
-            </tr>
-        </thead>
+                <thead>
+                    <tr>
+                        <th class="col-md-5">Description</th>
+                        <th class="col-md-5">Ammount</th>
+                        <th class="col-md-1"></th>
+                        <th class="col-md-1"></th>
+                    </tr>
+                </thead>
         <!-- <th><i class="fa-regular fa-pen-to-square"></i></th>
         <th><i class="fa-solid fa-trash"></i></th> -->
-        <tbody id="actions"></tbody>
+                <tbody id="actions"></tbody>
         </div>
-    </div>
+        </div>
 </div>
 </body>
 </html>
