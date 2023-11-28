@@ -35,7 +35,16 @@ window.deleteActionFromManager = (actionId) => {
         manager.deleteAction(actionId);
         showActionsInTable();
     }
-}
+};
+
+window.updatedActionFromManager = (actionId) => {
+    let newAmount = prompt("update here")
+    if( newAmount == null || newAmount == '') alert ('try again!')
+    else{
+        manager.updateAction(actionId, +newAmount);
+        showActionsInTable();
+    }
+};
 
 function showActionsInTable() {
     document.getElementById('actions').innerHTML = '';
@@ -44,8 +53,8 @@ function showActionsInTable() {
     `<tr class=${action.type == 'income' ? 'text-success' : 'text-danger'}>
     <td>${action.description}</td>
     <td>${action.amount}</td>
-    <td> <i class="fa-regular fa-pen-to-square"> </i></td>
-    <td> <a onclick="deleteActionFromManager(${action.id})"><i class="fa-solid fa-trash"></i></a> </td>
+    <td> <a onclick="updatedActionFromManager(${action.id})"> <i style="cursor: pointer" class="fa-regular fa-pen-to-square"></i></a></td>
+    <td> <a onclick="deleteActionFromManager(${action.id})"><i style="cursor: pointer" class="fa-solid fa-trash"></i></a></td>
     </tr>`
     }
 }
