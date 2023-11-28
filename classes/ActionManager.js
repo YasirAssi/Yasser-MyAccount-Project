@@ -16,7 +16,7 @@ export default class ActionManager {
     }
     updateAction(actionId,newAmount){
         let updateAction = this.actions.findIndex((action) => action.id ==actionId);
-        this.actions[updateAction].amount = this.actions[updateAction].description == 'income' ? newAmount : -newAmount;
+        this.actions[updateAction].amount = this.actions[updateAction].type == 'income' ? newAmount : -newAmount;
         this.calcBalance();
     }
     calcBalance(){
