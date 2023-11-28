@@ -31,11 +31,10 @@ document.getElementById('amount').value = '';
 }
 
 function showActionsInTable() {
-    console.log('yasser');
     document.getElementById('actions').innerHTML = '';
     for(let action of manager.actions){
     document.getElementById('actions').innerHTML += 
-    `<tr class="${action.type == 'income' ? 'text-success' : 'text-danger'}">
+    `<tr class=${action.type == 'income' ? 'text-success' : 'text-danger'}>
     <td>${action.description}</td>
     <td>${action.amount}</td>
     <td> <i class="fa-regular fa-pen-to-square"> </i></td>
