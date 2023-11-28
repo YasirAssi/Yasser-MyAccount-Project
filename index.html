@@ -13,25 +13,25 @@
 </head>
 <body>
     <div class="container">
-        <h1 class="display-1 text-primary text-center">MY<i class="fa-solid fa-chart-pie text-secondary"></i>ACCOUNT</h1>
-        <div class="alert alert-secondary text-center" role="alert" id="balance">Balance:</div>
+        <h1 class="display-1 text-primary text-center text-bg-dark p-3">MY<i class="fa-solid fa-chart-pie text-secondary"></i>ACCOUNT</h1>
+        <div class="alert alert-secondary text-center bg-secondary-subtle mt-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded fs-1 text" role="alert" id="balance">Balance:</div>
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-4 text-bg-secondary p-3">
                 <select 
-                class="form-select m-2" 
+                class="form-select" 
                 aria-label="defailt select example" 
                 id="type">
                     <option value="income">Income</option>
                     <option value="expense">Expense</option>
                 </select>
-        <div class="form-floating my-3">
+        <div class="form-floating my-3 text-dark">
             <input type="text"
             class="form-control" 
             id="description" 
             placeholder="Description">
             <label for="description">Description</label>
         </div>
-        <div class="form-floating">
+        <div class="form-floating text-dark">
             <input type="number" 
             class="form-control" 
             id="amount" 
@@ -40,12 +40,12 @@
         </div>
             <button type="button" class="btn btn-primary mt-3 w-100" onclick="addActionToManager ()">Add</button>
         </div>
-        <div class="col-md-8">
+        <div class="col-md-8 bg-light shadow-lg p-3 mb-5 bg-body-tertiary rounded p-3">
             <table class="table">
                 <thead>
                     <tr>
-                        <th class="col-md-5">Description</th>
-                        <th class="col-md-5">Ammount</th>
+                        <th class="col-md-5 text-primary">Description</th>
+                        <th class="col-md-5 text-primary">Amount</th>
                         <th class="col-md-1"></th>
                         <th class="col-md-1"></th>
                     </tr>

@@ -25,6 +25,12 @@ export default class ActionManager {
         // for(let action of this.actions){
         //     this.balance += action.amount;
         // }
-        document.getElementById('balance').innerHTML = `Balance: ${this.balance}`;
+        let balance = document.getElementById('balance');
+        this.balance > 0 ? balance.innerHTML = `<p style="color:green;">Balance: ${this.balance}</p>`: balance.innerHTML = `<p style="color:red;">Balance: ${this.balance}</p>`;
+
+        // let balanceElement = document.getElementById('balance');
+        // let balanceColor = this.balance > 0 ? 'green' : 'red';
+
+        // balanceElement.innerHTML = `<p style="color:${balanceColor};">Balance: ${this.balance}</p>`;
     }
 }

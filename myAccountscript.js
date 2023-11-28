@@ -57,5 +57,9 @@ function showActionsInTable() {
     <td> <a onclick="deleteActionFromManager(${action.id})"><i style="cursor: pointer" class="fa-solid fa-trash"></i></a></td>
     </tr>`
     }
+    localStorage.setItem('actions', JSON.stringify(manager.actions));
+    localStorage.setItem('manager', JSON.stringify(manager));
+    localStorage.setItem('Balance', JSON.stringify(manager.balance));
 }
 showActionsInTable();
+
