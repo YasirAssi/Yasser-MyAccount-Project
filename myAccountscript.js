@@ -24,7 +24,23 @@ let amount = +document.getElementById('amount').value;
 let action = new Action (type, description, amount);
 //to add the action to actionManager
 manager.addAction(action)
+showActionsInTable();
 //reset the form
 document.getElementById('description').value = '';
 document.getElementById('amount').value = '';
 }
+
+function showActionsInTable() {
+    console.log('yasser');
+    document.getElementById('actions').innerHTML = '';
+    for(let action of manager.actions){
+    document.getElementById('actions').innerHTML += 
+    `<tr class="${action.type == 'income' ? 'text-success' : 'text-danger'}">
+    <td>${action.description}</td>
+    <td>${action.amount}</td>
+    <td> <i class="fa-regular fa-pen-to-square"> </i></td>
+    <td> <i class="fa-solid fa-trash"></i> </td>
+    </tr>`
+    }
+}
+showActionsInTable();
