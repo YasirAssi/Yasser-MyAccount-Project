@@ -30,6 +30,13 @@ document.getElementById('description').value = '';
 document.getElementById('amount').value = '';
 }
 
+window.deleteActionFromManager = (actionId) => {
+    if(confirm('delete?')){
+        manager.deleteAction(actionId);
+        showActionsInTable();
+    }
+}
+
 function showActionsInTable() {
     document.getElementById('actions').innerHTML = '';
     for(let action of manager.actions){
@@ -38,7 +45,7 @@ function showActionsInTable() {
     <td>${action.description}</td>
     <td>${action.amount}</td>
     <td> <i class="fa-regular fa-pen-to-square"> </i></td>
-    <td> <i class="fa-solid fa-trash"></i> </td>
+    <td> <a onclick="deleteActionFromManager(${action.id})"><i class="fa-solid fa-trash"></i></a> </td>
     </tr>`
     }
 }
