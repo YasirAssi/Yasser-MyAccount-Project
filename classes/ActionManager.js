@@ -21,6 +21,6 @@ export default class ActionManager {
         this.balance = 0;
         this.balance = this.actions.reduce((amount, action) => amount + action.amount, 0);
         let balance = document.getElementById('balance');
-        this.balance > 0 ? balance.innerHTML = `<p style="color:green;">Balance: ${this.balance} NIS</p>`: balance.innerHTML = `<p style="color:red;">Balance: ${this.balance} NIS</p>`;
+        balance.innerHTML = this.balance > 0 ?  `<p style="color:green;">Balance: ${this.balance} NIS</p>`:  `<p style="color:red;">Balance: ${this.balance} NIS</p>`;
     }
 }
