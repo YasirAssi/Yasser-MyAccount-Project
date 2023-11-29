@@ -1,16 +1,14 @@
 export default class ActionManager {
     constructor(){
         this.balance = 0;
-        this.actions = [];
+        this.actions = localStorage.getItem('actions') ? JSON.parse(localStorage.getItem('actions')):[];
     }
     addAction(action){
         this.actions.push(action);
         this.calcBalance();
     }
-    deleteAction(actionId){
-        //find the relevent index 
+    deleteAction(actionId){ 
         let deleteIndex =  this.actions.findIndex((action) => action.id == actionId);
-        //delete with splice
         this.actions.splice(deleteIndex, 1);
         this.calcBalance();
     }
@@ -22,15 +20,7 @@ export default class ActionManager {
     calcBalance(){
         this.balance = 0;
         this.balance = this.actions.reduce((amount, action) => amount + action.amount, 0);
-        // for(let action of this.actions){
-        //     this.balance += action.amount;
-        // }
         let balance = document.getElementById('balance');
         this.balance > 0 ? balance.innerHTML = `<p style="color:green;">Balance: ${this.balance}</p>`: balance.innerHTML = `<p style="color:red;">Balance: ${this.balance}</p>`;
-
-        // let balanceElement = document.getElementById('balance');
-        // let balanceColor = this.balance > 0 ? 'green' : 'red';
-
-        // balanceElement.innerHTML = `<p style="color:${balanceColor};">Balance: ${this.balance}</p>`;
     }
 }
