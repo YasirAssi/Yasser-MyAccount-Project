@@ -17,7 +17,6 @@ if (description == '') alert('Please Enter Discreption');
 else {
 let amount = +document.getElementById('amount').value;
 if (amount <= 0) alert('Please enter a positive amount.');
-//create the action object
 else { 
 let action = new Action (type, description, amount);
 manager.addAction(action)
