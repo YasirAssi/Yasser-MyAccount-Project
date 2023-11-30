@@ -36,8 +36,8 @@ window.deleteActionFromManager = (actionId) => {
 
 window.updatedActionFromManager = (actionId) => {
     let newAmount = prompt("update here")
-    if( newAmount == null || newAmount == '') alert ('try again!')
-    if (isNaN(newAmount)) alert ('Enter Numbers Only!')
+    if( newAmount == null || newAmount == '') alert ('try again!');
+    else if (isNaN(newAmount)) alert ('Enter Numbers Only!')
     else{
         manager.updateAction(actionId, +newAmount);
         showActionsInTable();
