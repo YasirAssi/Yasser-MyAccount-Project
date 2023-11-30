@@ -44,17 +44,50 @@ window.updatedActionFromManager = (actionId) => {
 };
 
 function showActionsInTable() {
-    document.getElementById('actions').innerHTML = '';
-    for(let action of manager.actions){
-    document.getElementById('actions').innerHTML += 
-    `<tr class=${action.type == 'income' ? 'text-success' : 'text-danger'}>
-    <td>${action.description}</td>
-    <td>${action.amount} NIS</td>
-    <td> <a onclick="updatedActionFromManager(${action.id})"> <i style="cursor: pointer" class="fa-regular fa-pen-to-square"></i></a></td>
-    <td> <a onclick="deleteActionFromManager(${action.id})"><i style="cursor: pointer" class="fa-solid fa-trash"></i></a></td>
-    </tr>`
+    let actionsContainer = document.getElementById('actions');
+    actionsContainer.innerHTML = '';
+
+    for (let action of manager.actions) {
+        let rowClass = action.type == 'income' ? 'text-success' : 'text-danger';
+
+        // Create elements
+        let tableRow = document.createElement('tr');
+        tableRow.className = rowClass;
+
+        let tableDataDescription = document.createElement('td');
+        tableDataDescription.textContent = action.description;
+
+        let tableDataAmount = document.createElement('td');
+        tableDataAmount.textContent = `${action.amount} NIS`;
+
+        let tableDataUpdated = document.createElement('td');
+        let updateIcon = document.createElement('i');
+        updateIcon.className = 'fa-regular fa-pen-to-square';
+        updateIcon.style.cursor = 'pointer';
+        tableDataUpdated.appendChild(updateIcon);
+        tableDataUpdated.addEventListener('click', () => updatedActionFromManager(action.id));
+
+        let tableDataDelete = document.createElement('td');
+        let deleteIcon = document.createElement('i');
+        deleteIcon.className = 'fa-solid fa-trash';
+        deleteIcon.style.cursor = 'pointer';
+        tableDataDelete.appendChild(deleteIcon);
+        tableDataDelete.addEventListener('click', () => deleteActionFromManager(action.id));
+
+        // Append elements to the table row
+        tableRow.appendChild(tableDataDescription);
+        tableRow.appendChild(tableDataAmount);
+        tableRow.appendChild(tableDataUpdated);
+        tableRow.appendChild(tableDataDelete);
+
+        // Append the table row to the container
+        actionsContainer.appendChild(tableRow);
     }
+
+    // Save actions to localStorage after the loop
     localStorage.setItem('actions', JSON.stringify(manager.actions));
 }
+
 showActionsInTable();
+
 
