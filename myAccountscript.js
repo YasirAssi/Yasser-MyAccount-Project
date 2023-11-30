@@ -50,7 +50,6 @@ function showActionsInTable() {
     for (let action of manager.actions) {
         let rowClass = action.type == 'income' ? 'text-success' : 'text-danger';
 
-        // Create elements
         let tableRow = document.createElement('tr');
         tableRow.className = rowClass;
 
@@ -74,17 +73,13 @@ function showActionsInTable() {
         tableDataDelete.appendChild(deleteIcon);
         tableDataDelete.addEventListener('click', () => deleteActionFromManager(action.id));
 
-        // Append elements to the table row
         tableRow.appendChild(tableDataDescription);
         tableRow.appendChild(tableDataAmount);
         tableRow.appendChild(tableDataUpdated);
         tableRow.appendChild(tableDataDelete);
 
-        // Append the table row to the container
         actionsContainer.appendChild(tableRow);
     }
-
-    // Save actions to localStorage after the loop
     localStorage.setItem('actions', JSON.stringify(manager.actions));
 }
 
