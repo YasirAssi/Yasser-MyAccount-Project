@@ -7,7 +7,6 @@ let supermarket= new Action("expense", "Supermarket", 600);
 console.log(supermarket);
 
 let manager = new ActionManager(); 
-manager.calcBalance();
 console.log(manager.actions);
 
 window.addActionToManager = () => { 

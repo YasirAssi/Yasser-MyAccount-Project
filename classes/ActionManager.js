@@ -1,7 +1,8 @@
 export default class ActionManager {
     constructor(){
-        this.balance = 0;
         this.actions = localStorage.getItem('actions') ? JSON.parse(localStorage.getItem('actions')):[];
+        this.balance = 0;
+        this.calcBalance();
     }
     addAction(action){
         this.actions.push(action);
